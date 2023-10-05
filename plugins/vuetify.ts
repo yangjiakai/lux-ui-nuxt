@@ -1,5 +1,7 @@
 import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
+import "@/assets/scss/main.scss";
+
+
 import { createVuetify } from 'vuetify'
 
 export default defineNuxtPlugin((app) => {

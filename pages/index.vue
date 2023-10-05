@@ -51,8 +51,9 @@ const desserts = [
 <template>
   <div class="">
     <v-btn color="success">text</v-btn>
-    <v-card class="gradient error" height="300"> </v-card>
-    <v-table>
+    <v-sheet height="200" class="ma-10 pa-10 elevation-5"></v-sheet>
+
+    <v-table class="gradient gray mt-10">
       <thead>
         <tr>
           <th class="text-left">Name</th>
