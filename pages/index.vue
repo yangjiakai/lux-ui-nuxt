@@ -46,12 +46,17 @@ const desserts = [
     calories: 518,
   },
 ];
+
+const a = ref("sssss")
 </script>
 
 <template>
   <div class="">
     <v-btn color="success">text</v-btn>
-    <v-sheet height="200" class="ma-10 pa-10 elevation-5"></v-sheet>
+    <v-sheet height="200" class="ma-10 pa-10 elevation-5">
+
+      {{ a }}
+    </v-sheet>
 
     <v-table class="gradient gray mt-10">
       <thead>

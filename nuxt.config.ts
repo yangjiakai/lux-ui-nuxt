@@ -13,16 +13,26 @@ export default defineNuxtConfig({
   routeRules: {
     '/**': { ssr: false }
   },
-
-  hooks: {
-    "vite:extendConfig": (config: any) => {
-      config.plugins.push(
-        vuetify({
-          styles: { configFile: resolve("/assets/scss/variables.scss") },
-        })
-      );
+  modules: [
+    async (options, nuxt) => {
+      nuxt.hooks.hook("vite:extendConfig", (config) => {
+        config.plugins ||= [];
+        config.plugins.push(
+          vuetify({
+            styles: { configFile: resolve("/assets/scss/variables.scss") },
+          }));
+      });
     },
-  },
+  ],
+  // hooks: {
+  //   "vite:extendConfig": (config: any) => {
+  //     config.plugins.push(
+  //       vuetify({
+  //         styles: { configFile: resolve("/assets/scss/variables.scss") },
+  //       })
+  //     );
+  //   },
+  // },
   vite: {
     vue: {
       template: {
