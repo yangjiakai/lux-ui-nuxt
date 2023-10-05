@@ -5,7 +5,7 @@
 -->
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import MainSiderbar from "@/components/app/MainSiderbar.vue";
+import MainSiderbar from "@/components/app/main-sidebar/MainSiderbar.vue";
 
 </script>
 
