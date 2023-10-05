@@ -24,15 +24,7 @@ export default defineNuxtConfig({
       });
     },
   ],
-  // hooks: {
-  //   "vite:extendConfig": (config: any) => {
-  //     config.plugins.push(
-  //       vuetify({
-  //         styles: { configFile: resolve("/assets/scss/variables.scss") },
-  //       })
-  //     );
-  //   },
-  // },
+
   vite: {
     vue: {
       template: {

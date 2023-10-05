@@ -5,6 +5,7 @@
 -->
 <script setup lang="ts">
 import { RouterView } from "vue-router";
+import MainSiderbar from "@/components/app/MainSiderbar.vue";
 
 </script>
 
@@ -12,9 +13,7 @@ import { RouterView } from "vue-router";
 
 <template>
   <v-app>
-    <v-navigation-drawer elevation="10" location="left" width="320">
-    </v-navigation-drawer>
-
+    <MainSiderbar />
     <v-main>
       <div class="pa-5">
         <RouterView />
