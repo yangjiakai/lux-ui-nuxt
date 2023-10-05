@@ -1,0 +1,35 @@
+.gradient.primary {
+  color: white;
+  background: linear-gradient(318deg, rgb(67, 56, 202) 0%, rgb(79, 70, 229) 50%, rgb(99, 102, 241) 100%) !important;
+}
+.gradient.purple {
+  color: white;
+  background: linear-gradient(318deg, rgb(148, 76, 206) 0%, rgb(191, 60, 179) 50%, rgb(236, 39, 145) 100%) !important;
+}
+.gradient.cancel {
+  background: linear-gradient(318deg, rgb(203, 213, 225) 0%, rgb(226, 232, 240) 50%, rgb(241, 245, 249) 100%) !important;
+}
+.gradient.success {
+  color: white;
+  background: linear-gradient(318deg, rgb(66, 186, 91) 0%, rgb(113, 207, 86) 50%, rgb(153, 223, 75) 100%) !important;
+}
+.gradient.info {
+  color: white;
+  background: linear-gradient(318deg, rgb(72, 118, 252) 0%, rgb(69, 165, 249) 50%, rgb(62, 202, 242) 100%) !important;
+}
+.gradient.blue {
+  color: white;
+  background: linear-gradient(318deg, rgb(30, 64, 175) 0%, rgb(37, 99, 235) 50%, rgb(59, 130, 246) 100%) !important;
+}
+.gradient.warning {
+  color: white;
+  background: linear-gradient(318deg, rgb(240, 96, 93) 0%, rgb(243, 153, 89) 50%, rgb(236, 197, 81) 100%) !important;
+}
+.gradient.error {
+  color: white;
+  background: linear-gradient(318deg, rgb(233, 53, 55) 0%, rgb(239, 89, 99) 50%, rgb(240, 116, 136) 100%) !important;
+}
+.gradient.gray {
+  color: white;
+  background: linear-gradient(318deg, rgb(62, 67, 83) 0%, rgb(75, 80, 108) 50%, rgb(80, 87, 125) 100%) !important;
+}/*# sourceMappingURL=gradients.css.map */
