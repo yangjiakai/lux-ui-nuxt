@@ -1,36 +1,127 @@
-<script setup lang="ts">
 
+<script setup lang="ts">
+import { Icon } from "@iconify/vue";
 
 definePageMeta({
-  layout: "blank",
+  layout: "auth",
 });
+
+const router = useRouter()
+const isLoading = ref(false);
+const isSignInDisabled = ref(false);
+
+const refLoginForm = ref();
+const email = ref("vuetify3-visitor@gmail.com");
+const password = ref("sfm12345");
+const isFormValid = ref(true);
+
+// show password field
+const showPassword = ref(false);
+const loginWithEmailAndPassword = async (email: string, password: string) => {
+  router.push("/");
+};
+
+const loginWithGoogle = async () => {
+  router.push("/");
+};
+
+const handleLogin = async () => {
+  const { valid } = await refLoginForm.value.validate();
+  if (valid) {
+    isLoading.value = true;
+    isSignInDisabled.value = true;
+    loginWithEmailAndPassword(email.value, password.value);
+
+  } else {
+    console.log("no");
+  }
+};
+
+const signInWithGoolgle = () => {
+  loginWithGoogle();
+};
+
+// Error Check
+const emailRules = ref([
+  (v: string) => !!v || "E-mail is required",
+  (v: string) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+]);
+
+const passwordRules = ref([
+  (v: string) => !!v || "Password is required",
+  (v: string) =>
+    (v && v.length <= 10) || "Password must be less than 10 characters",
+]);
+
+// error provider
+const errorProvider = ref(false);
+const errorProviderMessages = ref("");
+
+const error = ref(false);
+const errorMessages = ref("");
+const resetErrors = () => {
+  error.value = false;
+  errorMessages.value = "";
+};
+
+
 </script>
 <template>
-  <div class="pa-3">
-    <v-row class="h-100vh mh-100 auth">
-      <v-col cols="12" lg="7" xl="8" class="d-lg-flex align-center justify-center authentication position-relative">
-        <div class="auth-header pt-lg-6 pt-2 px-sm-6 px-3 pb-lg-6 pb-0">
-          <div class="position-relative">
-            <LcFullLogoDark />
-          </div>
+  <v-card color="white" class="pa-3 ma-3" elevation="3">
+    <v-card-title class="my-4 text-h4">
+      <span class="flex-fill"> Welcome </span>
+    </v-card-title>
+    <v-card-subtitle>Sign in to your account</v-card-subtitle>
+    <!-- sign in form -->
+
+    <v-card-text>
+      <v-form ref="refLoginForm" class="text-left" v-model="isFormValid" lazy-validation>
+        <v-text-field ref="refEmail" v-model="email" required :error="error" label="邮箱" density="default"
+          variant="underlined" color="primary" bg-color="#fff" :rules="emailRules" name="email" outlined validateOn="blur"
+          placeholder="403474473@qq.com" @keyup.enter="handleLogin" @change="resetErrors"></v-text-field>
+        <v-text-field ref="refPassword" v-model="password" :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+          :type="showPassword ? 'text' : 'password'" :error="error" :error-messages="errorMessages" label="密码"
+          placeholder="sfm12345" density="default" variant="underlined" color="primary" bg-color="#fff"
+          :rules="passwordRules" name="password" outlined validateOn="blur" @change="resetErrors"
+          @keyup.enter="handleLogin" @click:append-inner="showPassword = !showPassword"></v-text-field>
+        <v-btn :loading="isLoading" :disabled="isSignInDisabled" block size="x-large" color="primary" @click="handleLogin"
+          class="mt-2">登录</v-btn>
+
+        <div class="text-grey text-center text-caption font-weight-bold text-uppercase my-5">
+          或使用
         </div>
-        <div class="">
-          <img src="/images/backgrounds/login-bg.svg" height="450" class="position-relative d-none d-lg-flex"
-            alt="login-background" />
+
+        <!-- external providers list -->
+        <v-btn class="mb-2 text-capitalize" color="white" elevation="1" block size="x-large" @click="signInWithGoolgle"
+          :disabled="isSignInDisabled">
+          <Icon icon="logos:google-icon" class="mr-3 my-2" />
+          Google
+        </v-btn>
+
+
+        <div v-if="errorProvider" class="error--text my-2">
+          {{ errorProviderMessages }}
         </div>
-      </v-col>
-      <v-col cols="12" lg="5" xl="4" class="d-flex align-center justify-center bg-surface">
-        <div class="mt-xl-0 mt-5 mw-100">
-          <h2 class="text-h3 font-weight-bold mb-2">Welcome to AdminPro</h2>
-          <div class="text-subtitle-1 mb-6">Your Admin Dashboard</div>
-          <AuthLoginForm />
-          <h6 class="text-h6 d-flex align-center mt-6 font-weight-medium">
-            New to AdminPro?
-            <v-btn class="pl-0 text-primary text-body-1 opacity-1 pl-2 font-weight-medium" height="auto"
-              to="/auth/register" variant="plain">Create an account</v-btn>
-          </h6>
+
+        <div class="mt-5 text-center">
+          <router-link class="text-primary" to="/auth/forgot-password">
+            忘记密码
+          </router-link>
         </div>
-      </v-col>
-    </v-row>
+      </v-form></v-card-text>
+  </v-card>
+  <div class="text-center mt-6">
+    还没有账号？
+    <router-link to="/auth/signup" class="text-primary font-weight-bold">
+      创建账号
+    </router-link>
   </div>
 </template>
+
+
+
+<style scoped lang="scss">
+.main-bg {
+  background-image: linear-gradient(to right, #D5DBE7, #D5DBE7);
+}
+</style>
