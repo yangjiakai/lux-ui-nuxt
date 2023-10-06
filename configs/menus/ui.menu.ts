@@ -1,6 +1,6 @@
 export default [
   {
-    icon: "mdi-animation-outline",
+    icon: "solar:video-library-line-duotone",
     text: "Lottie Animation",
     link: "/ui/lottie-animation",
   },

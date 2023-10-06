@@ -1,7 +1,7 @@
 
 import menuLanding from "./menus/landing.menu";
 import menuUI from "./menus/ui.menu";
-import menuPages from "./menus/pages.menu";
+import menuAuth from "./menus/auth.menu";
 
 export default {
   menu: [
@@ -12,7 +12,7 @@ export default {
 
           text: "Dashboard",
           link: "/dashboard",
-          icon: "mdi-view-dashboard-outline",
+          icon: "solar:widget-line-duotone",
         },
       ],
     },
@@ -29,8 +29,8 @@ export default {
       items: menuUI,
     },
     {
-      text: "Pages",
-      items: menuPages,
+      text: "Auth ",
+      items: menuAuth,
     },
 
   ],

@@ -9,7 +9,7 @@ import * as labsComponents from 'vuetify/labs/components'
 
 import {
   BLUE_THEME,
-  AQUA_THEME,
+  GRAY_THEME,
 } from "@/theme/LightTheme";
 import {
   DARK_BLUE_THEME,
@@ -24,10 +24,10 @@ export default defineNuxtPlugin((app) => {
       ...components
     },
     theme: {
-      defaultTheme: "BLUE_THEME",
+      defaultTheme: "GRAY_THEME",
       themes: {
         BLUE_THEME,
-        AQUA_THEME,
+        GRAY_THEME,
         DARK_BLUE_THEME
       },
     },

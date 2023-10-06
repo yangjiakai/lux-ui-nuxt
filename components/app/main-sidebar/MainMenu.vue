@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { Icon } from '@iconify/vue';
 
 const props = defineProps({
   menu: {
@@ -9,7 +9,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <v-list class="menu-list " nav dense>
+  <v-list class="menu-list  " nav dense>
     <template v-for="menuArea in props.menu" :key="menuArea.key">
       <div v-if="(menuArea.key || menuArea.text)" class="pa-1 mt-2 text-overline">
         {{ menuArea.text }}
@@ -17,21 +17,25 @@ const props = defineProps({
       <template v-if="menuArea.items">
         <template v-for="menuItem in menuArea.items" :key="menuItem.key">
           <!-- menu level 1 -->
-          <v-list-item v-if="!menuItem.items" :to="menuItem.link" :prepend-icon="menuItem.icon || 'mdi-circle-medium'"
-            density="compact" active-color="primary">
-            <v-list-item-title v-text="menuItem.text" class=""></v-list-item-title>
+          <v-list-item v-if="!menuItem.items" :to="menuItem.link" density="compact" color="primary">
+            <template v-slot:prepend>
+              <Icon class="mx-2 mr-5" width="24" :icon="menuItem.icon" />
+            </template>
+            <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
           </v-list-item>
           <v-list-group v-else :value="menuItem.items">
             <!-- subMenu activator -->
             <template v-slot:activator="{ props }">
-              <v-list-item v-bind="props" :prepend-icon="menuItem.icon || 'mdi-circle-medium'" :title="menuItem.text"
-                color="primary">
+              <v-list-item v-bind="props" :prepend-icon="menuItem.icon || 'mdi-circle-medium'" color="primary">
+                <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
               </v-list-item>
             </template>
             <!-- menu level 2 -->
             <v-list-item v-for="subMenuItem in menuItem.items" :key="subMenuItem.key"
-              :prepend-icon="subMenuItem.icon || 'mdi-circle-medium'" :title="subMenuItem.text" :to="subMenuItem.link"
-              density="compact" color="primary"></v-list-item>
+              :prepend-icon="subMenuItem.icon || 'mdi-circle-medium'" :to="subMenuItem.link" density="compact"
+              color="primary">
+              <v-list-item-title v-text="subMenuItem.text" class="font-weight-bold"></v-list-item-title>
+            </v-list-item>
           </v-list-group>
         </template>
       </template>
