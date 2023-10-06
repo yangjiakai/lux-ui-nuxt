@@ -10,7 +10,7 @@ export default {
       items: [
         {
 
-          text: "仪表盘",
+          text: "Dashboard",
           link: "/dashboard",
           icon: "mdi-view-dashboard-outline",
         },

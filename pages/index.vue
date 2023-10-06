@@ -52,11 +52,20 @@ const a = ref("sssss")
 
 <template>
   <div class="">
-    <v-btn color="success">text</v-btn>
-    <v-sheet height="200" class="ma-10 pa-10 elevation-5">
+    <div>
+      <v-btn color="success" class="mr-2">success</v-btn>
+      <v-btn color="error" class="mr-2">error</v-btn>
+      <v-btn color="warning" class="mr-2">warning</v-btn>
+      <v-btn color="info" class="mr-2">info</v-btn>
+      <v-btn color="primary" class="mr-2">primary</v-btn>
+      <v-btn color="secondary" class="mr-2">secondary</v-btn>
+      <v-btn color="accent" class="mr-2">accent</v-btn>
+
+    </div>
+    <v-card height="200" class="ma-10 pa-10">
 
       {{ a }}
-    </v-sheet>
+    </v-card>
 
     <v-table class="gradient gray mt-10">
       <thead>
