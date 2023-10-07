@@ -26,14 +26,19 @@ const props = defineProps({
           <v-list-group v-else :value="menuItem.items">
             <!-- subMenu activator -->
             <template v-slot:activator="{ props }">
-              <v-list-item v-bind="props" :prepend-icon="menuItem.icon || 'mdi-circle-medium'" color="primary">
+              <v-list-item v-bind="props" color="primary">
+                <template v-slot:prepend>
+                  <Icon class="mx-2 mr-5" width="24" :icon="menuItem.icon" />
+                </template>
                 <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
               </v-list-item>
             </template>
             <!-- menu level 2 -->
-            <v-list-item v-for="subMenuItem in menuItem.items" :key="subMenuItem.key"
-              :prepend-icon="subMenuItem.icon || 'mdi-circle-medium'" :to="subMenuItem.link" density="compact"
-              color="primary">
+            <v-list-item v-for="subMenuItem in menuItem.items" :key="subMenuItem.key" :to="subMenuItem.link"
+              density="compact" color="primary">
+              <template v-slot:prepend>
+                <Icon class="mx-2 mr-5" width="24" :icon="subMenuItem.icon" />
+              </template>
               <v-list-item-title v-text="subMenuItem.text" class="font-weight-bold"></v-list-item-title>
             </v-list-item>
           </v-list-group>

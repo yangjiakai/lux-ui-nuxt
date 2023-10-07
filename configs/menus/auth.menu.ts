@@ -1,21 +1,21 @@
 export default [
   {
-    icon: "mdi-file-lock-outline",
+    icon: "solar:shield-minus-line-duotone",
     text: "Auth Pages",
     regex: /^\/auth/,
     items: [
       {
-        icon: "mdi-login",
+        icon: "solar:login-3-line-duotone",
         text: "Login",
         link: "/auth/signin",
       },
       {
-        icon: "mdi-logout",
+        icon: "solar:logout-3-line-duotone",
         text: "Register",
         link: "/auth/signup",
       },
       {
-        icon: "mdi-email-check",
+        icon: "fxemoji:email",
         text: "Mail Verify",
         link: "/auth/verify-email",
       },
