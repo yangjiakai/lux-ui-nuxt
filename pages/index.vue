@@ -4,6 +4,8 @@
 * @Description: 
 -->
 <script setup lang="ts">
+import { useAppStore } from '@/stores/app';
+const appStore = useAppStore();
 const desserts = [
   {
     name: "Frozen Yogurt",
@@ -61,7 +63,9 @@ const a = ref("sssss");
     <v-btn color="accent" class="mr-2">accent</v-btn>
   </v-card>
   <div>
-    <v-card height="200" class="pa-5 mt-5"> </v-card>
+    <v-card height="200" class="pa-5 mt-5">
+      {{ appStore.theme }}
+    </v-card>
 
     <v-card class="mt-5">
       <v-table>
