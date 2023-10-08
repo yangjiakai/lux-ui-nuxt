@@ -47,40 +47,39 @@ const desserts = [
   },
 ];
 
-const a = ref("sssss")
+const a = ref("sssss");
 </script>
 
 <template>
-  <div class="">
-    <div>
-      <v-btn color="success" class="mr-2">success</v-btn>
-      <v-btn color="error" class="mr-2">error</v-btn>
-      <v-btn color="warning" class="mr-2">warning</v-btn>
-      <v-btn color="info" class="mr-2">info</v-btn>
-      <v-btn color="primary" class="mr-2">primary</v-btn>
-      <v-btn color="secondary" class="mr-2">secondary</v-btn>
-      <v-btn color="accent" class="mr-2">accent</v-btn>
+  <v-card class="pa-5">
+    <v-btn color="success" class="mr-2">success</v-btn>
+    <v-btn color="error" class="mr-2">error</v-btn>
+    <v-btn color="warning" class="mr-2">warning</v-btn>
+    <v-btn color="info" class="mr-2">info</v-btn>
+    <v-btn color="primary" class="mr-2">primary</v-btn>
+    <v-btn color="secondary" class="mr-2">secondary</v-btn>
+    <v-btn color="accent" class="mr-2">accent</v-btn>
+  </v-card>
+  <div>
+    <v-card height="200" class="pa-5 mt-5"> </v-card>
 
-    </div>
-    <v-card height="200" class="ma-10 pa-10">
-
-      {{ a }}
+    <v-card class="mt-5">
+      <v-table>
+        <thead>
+          <tr>
+            <th class="text-left">Name</th>
+            <th class="text-left">Calories</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in desserts" :key="item.name">
+            <td>{{ item.name }}</td>
+            <td>{{ item.calories }}</td>
+          </tr>
+        </tbody>
+      </v-table>
     </v-card>
 
-    <v-table class="gradient gray mt-10">
-      <thead>
-        <tr>
-          <th class="text-left">Name</th>
-          <th class="text-left">Calories</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="item in desserts" :key="item.name">
-          <td>{{ item.name }}</td>
-          <td>{{ item.calories }}</td>
-        </tr>
-      </tbody>
-    </v-table>
   </div>
 </template>
 

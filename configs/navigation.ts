@@ -11,7 +11,7 @@ export default {
         {
 
           text: "Dashboard",
-          link: "/dashboard",
+          link: "/",
           icon: "solar:widget-line-duotone",
         },
       ],

@@ -7,17 +7,17 @@ export default [
       {
         icon: "solar:login-3-line-duotone",
         text: "Login",
-        link: "/auth/signin",
+        link: "/auth/login",
       },
       {
         icon: "solar:logout-3-line-duotone",
         text: "Register",
-        link: "/auth/signup",
+        link: "/auth/login",
       },
       {
         icon: "fxemoji:email",
         text: "Mail Verify",
-        link: "/auth/verify-email",
+        link: "/auth/mail-vertify",
       },
 
     ],
