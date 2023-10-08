@@ -65,6 +65,7 @@ const a = ref("sssss");
   <div>
     <v-card height="200" class="pa-5 mt-5">
       {{ appStore.theme }}
+      <v-btn color="primary" @click="appStore.toggleTheme">toggleTheme</v-btn>
     </v-card>
 
     <v-card class="mt-5">

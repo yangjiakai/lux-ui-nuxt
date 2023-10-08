@@ -1,8 +1,6 @@
 import '@mdi/font/css/materialdesignicons.css'
 import "@/assets/scss/main.scss";
-
 import { createVuetify } from 'vuetify'
-
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import * as labsComponents from 'vuetify/labs/components'
@@ -33,4 +31,5 @@ export default defineNuxtPlugin((app) => {
     },
   })
   app.vueApp.use(vuetify)
+
 })
