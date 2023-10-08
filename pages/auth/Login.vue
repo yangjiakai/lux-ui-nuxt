@@ -76,19 +76,19 @@ const resetErrors = () => {
 
     <v-card-text>
       <v-form ref="refLoginForm" class="text-left" v-model="isFormValid" lazy-validation>
-        <v-text-field ref="refEmail" v-model="email" required :error="error" label="邮箱" density="default"
+        <v-text-field ref="refEmail" v-model="email" required :error="error" label="Email" density="default"
           variant="underlined" color="primary" bg-color="#fff" :rules="emailRules" name="email" outlined validateOn="blur"
           placeholder="403474473@qq.com" @keyup.enter="handleLogin" @change="resetErrors"></v-text-field>
         <v-text-field ref="refPassword" v-model="password" :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-          :type="showPassword ? 'text' : 'password'" :error="error" :error-messages="errorMessages" label="密码"
+          :type="showPassword ? 'text' : 'password'" :error="error" :error-messages="errorMessages" label="Password"
           placeholder="sfm12345" density="default" variant="underlined" color="primary" bg-color="#fff"
           :rules="passwordRules" name="password" outlined validateOn="blur" @change="resetErrors"
           @keyup.enter="handleLogin" @click:append-inner="showPassword = !showPassword"></v-text-field>
         <v-btn :loading="isLoading" :disabled="isSignInDisabled" block size="x-large" color="primary" @click="handleLogin"
-          class="mt-2">登录</v-btn>
+          class="mt-2">Login</v-btn>
 
         <div class="text-grey text-center text-caption font-weight-bold text-uppercase my-5">
-          或使用
+          or
         </div>
 
         <!-- external providers list -->
@@ -105,15 +105,15 @@ const resetErrors = () => {
 
         <div class="mt-5 text-center">
           <router-link class="text-primary" to="/auth/forgot-password">
-            忘记密码
+            Forgot password
           </router-link>
         </div>
       </v-form></v-card-text>
   </v-card>
   <div class="text-center mt-6">
-    还没有账号？
+    Don't have an account yet?
     <router-link to="/auth/signup" class="text-primary font-weight-bold">
-      创建账号
+      Sign up
     </router-link>
   </div>
 </template>

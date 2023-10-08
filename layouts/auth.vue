@@ -14,7 +14,7 @@
       <div class="layout-content ma-auto w-full">
         <slot></slot>
       </div>
-      <div class="pa-5">Vue 3.2 & Vuetify 3.1.13 & Vite 4.2</div>
+      <div class="pa-5">Nuxt 3.7.4 & Vuetify 3.3.20</div>
     </v-card>
   </div>
 </template>
