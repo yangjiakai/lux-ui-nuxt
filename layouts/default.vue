@@ -14,10 +14,13 @@ import MainSiderbar from "@/components/app/main-sidebar/MainSiderbar.vue";
 <template>
   <v-app>
     <MainSiderbar />
+    <v-app-bar></v-app-bar>
     <v-main class="fill-height">
       <div class="fill-height pa-5">
         <RouterView />
       </div>
+
     </v-main>
+
   </v-app>
 </template>

@@ -67,11 +67,11 @@ const text = ref(markdown);
   <UiParentCard title="MdEditor">
     <div class="d-flex">
       <MdPreview :editorId="id" :modelValue="text" />
-      <v-card variant="outlined" width="200" height="300">
+      <v-card class="pa-3" variant="outlined" width="200" height="300">
         <MdCatalog :editorId="id" :scrollElement="scrollElement" />
       </v-card>
-    </div>
 
+    </div>
   </UiParentCard>
 </template>
 
