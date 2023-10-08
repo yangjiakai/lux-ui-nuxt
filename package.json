@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "test": "vitest",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,8 +15,10 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.2",
     "eslint": "^8.50.0",
+    "happy-dom": "^12.9.0",
     "nuxt": "^3.7.4",
     "vite-plugin-vuetify": "^1.0.2",
+    "vitest": "^0.33.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
     "vuetify": "^3.3.20"
@@ -23,6 +26,7 @@
   "dependencies": {
     "@iconify/vue": "^4.1.1",
     "@mdi/font": "^7.2.96",
+    "@nuxt/test-utils": "^3.7.4",
     "@pinia/nuxt": "^0.4.11",
     "pinia": "^2.1.6",
     "sass": "^1.68.0",
