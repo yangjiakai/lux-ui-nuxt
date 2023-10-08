@@ -8,6 +8,7 @@
         <div class="title my-2">
           Welcome! Let's build amazing things together.
         </div>
+        <v-btn color="primary" to="/">Back Home</v-btn>
       </div>
     </v-sheet>
     <v-card variant="outlined" class="flex-grow-1 d-flex align-center justify-center flex-column">
