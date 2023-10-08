@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "test": "vitest",
+    "test:ui": "vitest --ui",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -14,6 +15,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.2",
+    "@vitest/ui": "^0.34.6",
     "eslint": "^8.50.0",
     "happy-dom": "^12.9.0",
     "nuxt": "^3.7.4",
