@@ -6,7 +6,7 @@
 <script setup lang="ts">
 import { MdEditor, MdPreview, MdCatalog } from 'md-editor-v3';
 import 'md-editor-v3/lib/style.css';
-import UiParentCard from "@/components/common/UiParentCard.vue";
+import UiCard from "@/components/common/UiCard.vue";
 
 const id = ref("editor");
 const scrollElement = document.documentElement;

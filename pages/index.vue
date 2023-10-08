@@ -5,6 +5,7 @@
 -->
 <script setup lang="ts">
 import { useAppStore } from '@/stores/app';
+import ApexGradientChart from '@/components/charts/apexchart/ApexGradientChart.vue';
 const appStore = useAppStore();
 const desserts = [
   {
@@ -63,11 +64,8 @@ const text = ref("sssss");
     <v-btn color="accent" class="mr-2">accent</v-btn>
   </v-card>
   <div>
-    <v-card height="200" class="pa-5 mt-5">
-      {{ appStore.theme }}
-
-      <v-btn color="primary" @click="appStore.toggleTheme">toggleTheme</v-btn>
-
+    <v-card class="pa-5 mt-5">
+      <ApexGradientChart />
     </v-card>
 
     <v-card class="mt-5">

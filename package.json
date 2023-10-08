@@ -31,9 +31,11 @@
     "@mdi/font": "^7.2.96",
     "@nuxt/test-utils": "^3.7.4",
     "@pinia/nuxt": "^0.4.11",
+    "apexcharts": "^3.43.0",
     "md-editor-v3": "^4.7.0",
     "pinia": "^2.1.6",
     "sass": "^1.68.0",
+    "vue3-apexcharts": "^1.4.4",
     "vue3-lottie": "^3.1.0"
   }
 }

@@ -1,9 +1,12 @@
 import '@mdi/font/css/materialdesignicons.css'
 import "@/assets/scss/main.scss";
 import { createVuetify } from 'vuetify'
+
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import * as labsComponents from 'vuetify/labs/components'
+
+import VueApexCharts from "vue3-apexcharts";
 
 import {
   BLUE_THEME,
@@ -30,6 +33,7 @@ export default defineNuxtPlugin((app) => {
       },
     },
   })
-  app.vueApp.use(vuetify)
+  app.vueApp.use(vuetify);
+  app.vueApp.use(VueApexCharts);
 
 })

@@ -6,6 +6,7 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import MainSiderbar from "@/components/app/main-sidebar/MainSiderbar.vue";
+import AppBar from "@/components/app/app-bar/AppBar.vue";
 
 </script>
 
@@ -14,7 +15,7 @@ import MainSiderbar from "@/components/app/main-sidebar/MainSiderbar.vue";
 <template>
   <v-app>
     <MainSiderbar />
-    <v-app-bar></v-app-bar>
+    <AppBar />
     <v-main class="fill-height">
       <div class="fill-height pa-5">
         <RouterView />

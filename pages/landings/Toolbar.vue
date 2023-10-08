@@ -10,7 +10,7 @@ import Toolbar3 from "@/components/landings/toolbar/Toolbar3.vue";
 import Toolbar4 from "@/components/landings/toolbar/Toolbar4.vue";
 import Toolbar5 from "@/components/landings/toolbar/Toolbar5.vue";
 
-import UiParentCard from "@/components/common/UiParentCard.vue";
+import UiCard from "@/components/common/UiCard.vue";
 </script>
 
 <template>
@@ -18,24 +18,24 @@ import UiParentCard from "@/components/common/UiParentCard.vue";
   <!---Top Toolbar -->
   <!-- ---------------------------------------------- -->
 
-  <UiParentCard title="Toolbar1">
+  <UiCard title="Toolbar1">
     <Toolbar1 />
-  </UiParentCard>
+  </UiCard>
 
-  <UiParentCard title="Toolbar2">
+  <UiCard title="Toolbar2">
     <Toolbar2 />
-  </UiParentCard>
+  </UiCard>
 
-  <UiParentCard title="Toolbar3">
+  <UiCard title="Toolbar3">
     <Toolbar3 />
-  </UiParentCard>
+  </UiCard>
 
-  <UiParentCard title="Toolbar4">
+  <UiCard title="Toolbar4">
     <Toolbar4 />
-  </UiParentCard>
-  <UiParentCard title="Toolbar5">
+  </UiCard>
+  <UiCard title="Toolbar5">
     <Toolbar5 />
-  </UiParentCard>
+  </UiCard>
 </template>
 
 <style lang="scss"></style>
