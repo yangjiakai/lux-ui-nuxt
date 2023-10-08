@@ -1,5 +1,5 @@
-import navigation from "./navigation";
+import mainMenu from "./mainMenu";
 
 export default {
-  navigation,
+  mainMenu,
 };

@@ -2,7 +2,7 @@
 import menuLanding from "./menus/landing.menu";
 import menuUI from "./menus/ui.menu";
 import menuAuth from "./menus/auth.menu";
-
+import menuWidget from "./menus/widget.menu";
 export default {
   menu: [
     {
@@ -32,6 +32,10 @@ export default {
       text: "Auth ",
       items: menuAuth,
     },
+    {
+      text: "Widgets",
+      items: menuWidget,
+    }
 
   ],
 };

@@ -8,7 +8,7 @@
 import GithubCard from '@/components/app/main-sidebar/GithubCard.vue';
 import MainMenu from '@/components/app/main-sidebar/MainMenu.vue';
 import configs from "@/configs";
-const navigation = ref(configs.navigation);
+const navigation = ref(configs.mainMenu);
 
 </script>
 

@@ -5,6 +5,8 @@
 -->
 <script setup lang="ts">
 import { useAppStore } from '@/stores/app';
+import { MdEditor } from 'md-editor-v3';
+import 'md-editor-v3/lib/style.css';
 const appStore = useAppStore();
 const desserts = [
   {
@@ -49,7 +51,7 @@ const desserts = [
   },
 ];
 
-const a = ref("sssss");
+const text = ref("sssss");
 </script>
 
 <template>
@@ -65,7 +67,9 @@ const a = ref("sssss");
   <div>
     <v-card height="200" class="pa-5 mt-5">
       {{ appStore.theme }}
+
       <v-btn color="primary" @click="appStore.toggleTheme">toggleTheme</v-btn>
+      <MdEditor v-model="text" />
     </v-card>
 
     <v-card class="mt-5">
