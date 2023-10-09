@@ -17,7 +17,8 @@ export const useAppStore = defineStore({
 
   },
   actions: {
-
-
+    toggleSidebar() {
+      this.mainSidebar = !this.mainSidebar
+    }
   },
 })

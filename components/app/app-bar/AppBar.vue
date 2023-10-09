@@ -6,11 +6,13 @@
 <script setup lang="ts">
 import LanguageSwitcher from './LanguageSwitcher.vue';
 import UserMenu from './UserMenu.vue';
+import { useAppStore } from '@/stores/app';
+const appStore = useAppStore();
 </script>
 
 <template>
   <v-app-bar>
-    <v-app-bar-nav-icon @click=""></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="appStore.toggleSidebar"></v-app-bar-nav-icon>
     <v-spacer></v-spacer>
     <v-btn icon>
       <v-badge dot color="success">
