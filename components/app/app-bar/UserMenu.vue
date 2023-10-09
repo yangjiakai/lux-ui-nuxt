@@ -4,9 +4,11 @@
 * @Description:
 -->
 <script setup lang="ts">
+const router = useRouter();
+
 
 const handleLogout = () => {
-
+  router.push("auth/login");
 };
 
 const navs = [
@@ -40,7 +42,7 @@ const navs = [
         <!-- ---------------------------------------------- -->
         <!-- Profile Area -->
         <!-- ---------------------------------------------- -->
-        <v-list-item to="/profile">
+        <v-list-item>
           <template v-slot:prepend>
             <v-avatar color="#eee" size="40">
               <v-img
