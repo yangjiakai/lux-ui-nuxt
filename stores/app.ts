@@ -4,7 +4,7 @@ export const useAppStore = defineStore({
   id: 'app',
   state: () => ({
     mainSidebar: true,
-    localCode: "en",
+
   }),
   persist: [
     {
@@ -18,8 +18,6 @@ export const useAppStore = defineStore({
   },
   actions: {
 
-    setLocalCode(localCode: string) {
-      this.localCode = localCode;
-    },
+
   },
 })

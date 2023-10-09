@@ -4,10 +4,10 @@
 * @Description: 语言切换组件
 -->
 <script setup lang="ts">
-import { useAppStore } from "@/stores/app";
+
 import { Icon } from "@iconify/vue";
 import { useLocale } from "vuetify";
-const appStore = useAppStore();
+
 const { current } = useLocale();
 
 onMounted(() => {
@@ -40,7 +40,7 @@ const availableLocales = [
 
 const setLocale = (locale: string) => {
   current.value = locale;
-  appStore.setLocalCode(locale);
+
 };
 </script>
 <template>
