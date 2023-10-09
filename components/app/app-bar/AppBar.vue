@@ -4,6 +4,7 @@
 * @Description: 
 -->
 <script setup lang="ts">
+import LanguageSwitcher from './LanguageSwitcher.vue';
 </script>
 
 <template>
@@ -22,6 +23,8 @@
       </v-badge>
     </v-btn>
     <v-divider vertical thickness="2" inset class="ml-5 mr-1"></v-divider>
+
+    <LanguageSwitcher />
   </v-app-bar>
 </template>
 

@@ -60,11 +60,11 @@ const text = ref(markdown);
 </script>
 
 <template>
-  <UiParentCard title="MdEditor">
+  <UiCard title="MdEditor">
     <MdEditor v-model="text" />
-  </UiParentCard>
+  </UiCard>
 
-  <UiParentCard title="MdEditor">
+  <UiCard title="MdEditor">
     <div class="d-flex">
       <MdPreview :editorId="id" :modelValue="text" />
       <v-card class="pa-3" variant="outlined" width="200" height="300">
@@ -72,7 +72,7 @@ const text = ref(markdown);
       </v-card>
 
     </div>
-  </UiParentCard>
+  </UiCard>
 </template>
 
 <style scoped lang="scss"></style>

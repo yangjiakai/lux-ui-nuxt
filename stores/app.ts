@@ -3,12 +3,12 @@ import { defineStore } from 'pinia'
 export const useAppStore = defineStore({
   id: 'app',
   state: () => ({
-    theme: "dark",
-    size: "medium",
+    mainSidebar: true,
+    localCode: "en",
   }),
   persist: [
     {
-      paths: ['theme', "size"],
+      paths: [],
       storage: localStorage,
     },
   ],
@@ -17,8 +17,9 @@ export const useAppStore = defineStore({
 
   },
   actions: {
-    toggleTheme() {
-      this.theme = this.theme === "dark" ? "light" : "dark";
-    }
+
+    setLocalCode(localCode: string) {
+      this.localCode = localCode;
+    },
   },
 })
