@@ -5,6 +5,7 @@
 -->
 <script setup lang="ts">
 import LanguageSwitcher from './LanguageSwitcher.vue';
+import UserMenu from './UserMenu.vue';
 </script>
 
 <template>
@@ -25,6 +26,9 @@ import LanguageSwitcher from './LanguageSwitcher.vue';
     <v-divider vertical thickness="2" inset class="ml-5 mr-1"></v-divider>
 
     <LanguageSwitcher />
+
+    <UserMenu />
+
   </v-app-bar>
 </template>
 
