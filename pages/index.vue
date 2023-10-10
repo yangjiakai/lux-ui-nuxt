@@ -12,6 +12,8 @@ import VisitsCard from '~/components/dashboard/VisitsCard.vue';
 import SalesCard from '~/components/dashboard/SalesCard.vue';
 import VisitsLineCard from '~/components/dashboard/VisitsLineCard.vue';
 import TableCard from '~/components/dashboard/TableCard.vue';
+import ActivityCard from '~/components/dashboard/ActivityCard.vue';
+import TicketsCard from '~/components/dashboard/TicketsCard.vue';
 
 const appStore = useAppStore();
 const desserts = [
@@ -71,38 +73,13 @@ const text = ref("sssss");
     <v-col cols="12" lg="4">
       <VisitsCard />
     </v-col>
-    <v-col cols="12" lg="4">
-      <SalesCard />
+    <v-col cols="12" lg="6">
+      <TicketsCard />
     </v-col>
-    <v-col cols="12" lg="8">
+    <v-col cols="12" lg="6">
       <TableCard />
     </v-col>
   </v-row>
-
-
-  <div>
-    <v-card class="pa-5 mt-5">
-
-    </v-card>
-
-    <v-card class="mt-5">
-      <v-table>
-        <thead>
-          <tr>
-            <th class="text-left">Name</th>
-            <th class="text-left">Calories</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="item in desserts" :key="item.name">
-            <td>{{ item.name }}</td>
-            <td>{{ item.calories }}</td>
-          </tr>
-        </tbody>
-      </v-table>
-    </v-card>
-
-  </div>
 </template>
 
 <style scoped lang="scss"></style>

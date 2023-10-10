@@ -87,17 +87,17 @@ onMounted(() => {
 </script>
 <template>
   <!-- loading spinner -->
-  <v-card v-if="loading" class="h-full d-flex flex-grow-1 align-center justify-center">
+  <v-card height="400" v-if="loading" class="h-full d-flex flex-grow-1 align-center justify-center">
     <v-progress-circular indeterminate color="primary"></v-progress-circular>
   </v-card>
-  <v-card v-else>
+  <v-card height="400" v-else>
     <v-card-title>
       <h6 class="text-h6 pa-2 d-flex align-center font-weight-bold">
         <span class="flex-fill font-weight-bold">Users</span>
       </h6>
     </v-card-title>
     <v-divider></v-divider>
-    <perfect-scrollbar style="height: 400px">
+    <div style="height: 400px">
       <v-table class="pa-3">
         <thead>
           <tr>
@@ -145,7 +145,7 @@ onMounted(() => {
           </tr>
         </tbody>
       </v-table>
-    </perfect-scrollbar>
+    </div>
   </v-card>
 </template>
 
