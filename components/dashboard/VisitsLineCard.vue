@@ -74,13 +74,15 @@ const chartOptions = computed(() => {
   <!-- html -->
   <!-- ------------------------------------ -->
   <VCard elevation="10">
-    <span class="lstick"></span>
+    <v-card-title>
+      <h6 class="text-h6 pa-2 d-flex align-center font-weight-bold">
+        <span class="flex-fill font-weight-bold">Site Visits<span class="text-body-2 ml-2 text-grey">(Year
+            2023)</span></span>
+      </h6>
+    </v-card-title>
     <v-card-text>
       <div class="d-sm-flex align-center">
-        <div>
-          <h3 class="text-h5 title mb-1">Site Visits</h3>
-          <h5 class="text-subtitle-1">Year 2023</h5>
-        </div>
+
         <div class="ml-auto">
           <div class="d-flex align-center">
             <div class="d-flex align-center px-2">
