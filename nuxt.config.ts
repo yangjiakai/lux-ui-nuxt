@@ -58,7 +58,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Lux-Nuxt3',
       meta: [
-        { name: 'description', content: description }
+        { name: 'description', content: description },
         {
           property: "og:url",
           content: url,
