@@ -19,7 +19,7 @@ const appStore = useAppStore();
         <v-icon>mdi-account-multiple-outline</v-icon>
       </v-badge>
     </v-btn>
-    <ToolbarNotifications />
+
     <v-btn icon>
       <v-badge color="error" content="7">
         <v-icon>mdi-calendar-check</v-icon>

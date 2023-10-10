@@ -98,9 +98,9 @@ const gredientChart = {
 </script>
 
 <template>
-  <div>
+  <v-card elevation="10">
     <apexchart type="line" height="350" :options="chartOptions" :series="gredientChart.series"></apexchart>
-  </div>
+  </v-card>
 </template>
 
 <style scoped lang="scss"></style>

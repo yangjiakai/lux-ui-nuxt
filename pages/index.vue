@@ -6,6 +6,11 @@
 <script setup lang="ts">
 import { useAppStore } from '@/stores/app';
 import ApexGradientChart from '@/components/charts/apexchart/ApexGradientChart.vue';
+
+import StatsCard from '@/components/dashboard/StatsCard.vue';
+import VisitsCard from '~/components/dashboard/VisitsCard.vue';
+import SalesCard from '~/components/dashboard/SalesCard.vue';
+
 const appStore = useAppStore();
 const desserts = [
   {
@@ -54,18 +59,25 @@ const text = ref("sssss");
 </script>
 
 <template>
-  <v-card class="pa-5">
-    <v-btn color="success" class="mr-2">success</v-btn>
-    <v-btn color="error" class="mr-2">error</v-btn>
-    <v-btn color="warning" class="mr-2">warning</v-btn>
-    <v-btn color="info" class="mr-2">info</v-btn>
-    <v-btn color="primary" class="mr-2">primary</v-btn>
-    <v-btn color="secondary" class="mr-2">secondary</v-btn>
-    <v-btn color="accent" class="mr-2">accent</v-btn>
-  </v-card>
+  <v-row class="mt-1">
+    <v-col cols="12" lg="12">
+      <StatsCard />
+    </v-col>
+    <v-col cols="12" lg="8">
+      <ApexGradientChart />
+    </v-col>
+    <v-col cols="12" lg="4">
+      <VisitsCard />
+    </v-col>
+    <v-col cols="12" lg="4">
+      <SalesCard />
+    </v-col>
+  </v-row>
+
+
   <div>
     <v-card class="pa-5 mt-5">
-      <ApexGradientChart />
+
     </v-card>
 
     <v-card class="mt-5">

@@ -1,5 +1,5 @@
 <!--
-* @Component: ToolbarNotifications
+* @Component: 
 * @Maintainer: J.K. Yang
 * @Description:
 -->
