@@ -13,7 +13,7 @@ const earningCardsData = [
     },
     {
         title: "Total Visitors",
-        img: "solar:library-line-duotone",
+        img: "solar:users-group-two-rounded-line-duotone",
         number: "11245",
     },
     {
