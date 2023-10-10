@@ -25,7 +25,7 @@ export default {
       ],
     },
     {
-      text: "UI - Theme Preview",
+      text: "UI ",
       items: menuUI,
     },
     {
