@@ -5,7 +5,7 @@ const { current } = useTheme();
 /*Chart*/
 const chartOptions = computed(() => {
   return {
-    series: [25, 35, 35, 15],
+    series: [25, 35, 15, 35],
     labels: ["Mobile", "tablet", "Other", "Desktop"],
     chart: {
       height: 280,
@@ -13,7 +13,7 @@ const chartOptions = computed(() => {
       foreColor: "#adb0bb",
       fontFamily: `inherit`,
     },
-    colors: [current.value.colors.primary, current.value.colors.secondary, '#ecf0f2', '#6352ce'],
+    colors: [current.value.colors.primary, current.value.colors.secondary, current.value.colors.info, current.value.colors.success],
     dataLabels: { enabled: false },
     legend: { show: false },
     grid: {
@@ -61,7 +61,7 @@ const chartOptions = computed(() => {
         <h5 class="text-subtitle-1">From Devices</h5>
       </div>
       <div class="mt-3 pt-5 position-relative">
-        <apexchart type="donut" height="280px" :options="chartOptions" :series="chartOptions.series"></apexchart>
+        <apexchart type="donut" height="290" :options="chartOptions" :series="chartOptions.series"></apexchart>
       </div>
       <div class="d-flex align-center justify-space-between mt-9">
         <div class="d-flex align-center px-2">
@@ -76,11 +76,18 @@ const chartOptions = computed(() => {
           </span>
           <span class="text-subtitle-1 mr-1">Mobile</span>
         </div>
-        <div class="d-flex align-center px-2">
+        <div class="d-flex align-center text-success px-2">
           <span class="text-overline">
-            <i class="mdi mdi-brightness-1 mx-1"></i>
+            <i class="mdi mdi-brightness-1  mx-1"></i>
           </span>
           <span class="text-subtitle-1 mr-1">Desktop
+          </span>
+        </div>
+        <div class="d-flex align-center text-info px-2">
+          <span class="text-overline">
+            <i class="mdi mdi-brightness-1  mx-1"></i>
+          </span>
+          <span class="text-subtitle-1 mr-1">Others
           </span>
         </div>
       </div>

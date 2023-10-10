@@ -10,6 +10,8 @@ import ApexGradientChart from '@/components/charts/apexchart/ApexGradientChart.v
 import StatsCard from '@/components/dashboard/StatsCard.vue';
 import VisitsCard from '~/components/dashboard/VisitsCard.vue';
 import SalesCard from '~/components/dashboard/SalesCard.vue';
+import VisitsLineCard from '~/components/dashboard/VisitsLineCard.vue';
+import TableCard from '~/components/dashboard/TableCard.vue';
 
 const appStore = useAppStore();
 const desserts = [
@@ -64,13 +66,16 @@ const text = ref("sssss");
       <StatsCard />
     </v-col>
     <v-col cols="12" lg="8">
-      <ApexGradientChart />
+      <VisitsLineCard />
     </v-col>
     <v-col cols="12" lg="4">
       <VisitsCard />
     </v-col>
     <v-col cols="12" lg="4">
       <SalesCard />
+    </v-col>
+    <v-col cols="12" lg="8">
+      <TableCard />
     </v-col>
   </v-row>
 

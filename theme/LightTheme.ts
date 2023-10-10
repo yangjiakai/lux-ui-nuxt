@@ -44,7 +44,7 @@ const GRAY_THEME: ThemeTypes = {
     },
     colors: {
         primary: "#344767",
-        secondary: "#334155",
+        secondary: "#0162FD",
         accent: "#705CF6",
         success: "#06d6a0",
         warning: "#ffd166",

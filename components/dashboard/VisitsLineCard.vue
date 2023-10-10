@@ -6,8 +6,8 @@ const { current } = useTheme();
 const chartOptions = computed(() => {
   return {
     series: [
-      { name: "Ample", data: [100, 390, 210, 350, 290, 180, 250] },
-      { name: "Pixel", data: [100, 250, 125, 215, 150, 310, 170] },
+      { name: "Nuxt3", data: [100, 390, 210, 350, 290, 180, 250] },
+      { name: "Vue3", data: [100, 250, 125, 215, 150, 310, 170] },
     ],
     grid: {
       show: false,
@@ -61,8 +61,9 @@ const chartOptions = computed(() => {
         },
       },
     },
-    stroke: { curve: "smooth", width: "4" },
+    stroke: { curve: "smooth", width: "5" },
     tooltip: { theme: "dark" },
+
   }
 });
 
@@ -77,8 +78,8 @@ const chartOptions = computed(() => {
     <v-card-text>
       <div class="d-sm-flex align-center">
         <div>
-          <h3 class="text-h5 title mb-1">Sales Overview</h3>
-          <h5 class="text-subtitle-1">Year 2021</h5>
+          <h3 class="text-h5 title mb-1">Site Visits</h3>
+          <h5 class="text-subtitle-1">Year 2023</h5>
         </div>
         <div class="ml-auto">
           <div class="d-flex align-center">
@@ -87,7 +88,7 @@ const chartOptions = computed(() => {
                 <span class="text-overline">
                   <i class="mdi mdi-brightness-1 mx-1"></i>
                 </span>
-                <span class="text-subtitle-1">Ample</span>
+                <span class="text-subtitle-1">Nuxt</span>
               </span>
             </div>
             <div class="d-flex align-center px-2">
@@ -95,7 +96,7 @@ const chartOptions = computed(() => {
                 <span class="text-overline">
                   <i class="mdi mdi-brightness-1 mx-1"></i>
                 </span>
-                <span class="text-subtitle-1">Pixel </span>
+                <span class="text-subtitle-1">Next </span>
               </span>
             </div>
           </div>
@@ -104,16 +105,16 @@ const chartOptions = computed(() => {
       <v-alert color="primary" class="mt-5">
         <v-row>
           <v-col cols="12" sm="4" lg="4">
-            <div class="text-subtitle-1">Total Sales</div>
-            <h3 class="text-h6 mt-1">$10,345</h3>
+            <div class="text-subtitle-1">Total Visits</div>
+            <h3 class="text-h6 mt-1">11245</h3>
           </v-col>
           <v-col cols="12" sm="4" lg="4">
             <div class="text-subtitle-1">This Year</div>
-            <h3 class="text-h6 mt-1">$7,589</h3>
+            <h3 class="text-h6 mt-1">7589</h3>
           </v-col>
           <v-col cols="12" sm="4" lg="4">
             <div class="text-subtitle-1">This Month</div>
-            <h3 class="text-h6 mt-1">$1,476</h3>
+            <h3 class="text-h6 mt-1">1476</h3>
           </v-col>
         </v-row>
       </v-alert>
