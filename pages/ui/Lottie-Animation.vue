@@ -74,7 +74,7 @@ const animations = ref([
 </script>
 
 <template>
-  <v-card class="mt-5 pa-5" elevation="0">
+  <v-card class=" pa-5" elevation="0">
     <v-row>
       <v-col cols="12" sm="6" md="4" lg="3" v-for="animation in animations" :key="animation.url">
         <v-card>
