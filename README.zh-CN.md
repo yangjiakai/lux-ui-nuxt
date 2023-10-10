@@ -22,7 +22,7 @@
 </p>
 
 <h4 align='center'>
-<a href="https://lux.vuetify3.com/">Live Demo</a>
+<a href="https://lux-vuetify3-nuxt3.netlify.app/">Live Demo</a>
 </h4>
 
 <br>
@@ -51,7 +51,7 @@ SPA 简化中文模板 [lux-vuetify3-zh](https://github.com/yangjiakai/vuetify3-
 
 Nuxt3 完整版 [lux-nuxt3](https://github.com/yangjiakai/lux-nuxt3)
 
-Nuxt3 简化版 [lux-nuxt3-template](https://github.com/yangjiakai/lux-nuxt3-template)
+Nuxt3 简化版 [lux-nuxt3-template](https://github.com/yangjiakai/lux-nuxt3)
 
 ## 📖Documents
 
