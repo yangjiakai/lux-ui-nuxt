@@ -65,7 +65,7 @@ const chartOptions = computed(() => {
     <v-card-text>
 
       <div class="mt-3 pt-5 position-relative">
-        <apexchart type="donut" height="290" :options="chartOptions" :series="chartOptions.series"></apexchart>
+        <apexchart type="donut" height="302" :options="chartOptions" :series="chartOptions.series"></apexchart>
       </div>
       <div class="d-flex align-center justify-space-between mt-9">
         <div class="d-flex align-center px-2">
