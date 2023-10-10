@@ -5,6 +5,14 @@
 -->
 <script setup lang="ts">
 import { Vue3Lottie } from "vue3-lottie";
+
+useHead({
+  title: 'Vuetify3-Lottie',
+  meta: [
+    { name: 'description', content: 'Vuetify3-Lottie-Animation' }
+  ],
+})
+
 const animations = ref([
   {
     name: "Loading ",
