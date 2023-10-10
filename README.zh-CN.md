@@ -51,7 +51,7 @@ SPA 简化中文模板 [lux-vuetify3-zh](https://github.com/yangjiakai/vuetify3-
 
 Nuxt3 完整版 [lux-nuxt3](https://github.com/yangjiakai/lux-nuxt3)
 
-Nuxt3 简化版 [lux-nuxt3-template](https://github.com/yangjiakai/lux-nuxt3)
+Nuxt3 简化版 [lux-nuxt3-template](https://github.com/yangjiakai/lux-nuxt3-template)
 
 ## 📖Documents
 
