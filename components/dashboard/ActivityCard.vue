@@ -9,7 +9,7 @@ const activityList = ref([
     type: "PushEvent",
     user: "yangjiakai",
     avatar: "https://avatars.githubusercontent.com/u/35951244?",
-    repo: "yangjiakai/lux-admin-vuetify3",
+    repo: "yangjiakai/lux-nuxt3",
     content:
       "<p>Update Dashboard View</p><br/><div><span class='mr-1'>✅</span> Add PieChart1</div>",
     action: "Commit",
@@ -23,7 +23,7 @@ const mockAcitvitys = [
     type: "PushEvent",
     user: "yangjiakai",
     avatar: "https://avatars.githubusercontent.com/u/35951244?",
-    repo: "yangjiakai/lux-admin-vuetify3",
+    repo: "yangjiakai/lux-nuxt3",
     content:
       "<p> Update Dashboard View</p><br/><div><span class='mr-1'>✅</span> Add PieChart1</div><div><span class='mr-1'>✅</span> Add PieChart2</div><div><span class='mr-1'>✅</span> Update ActivityCard,SalesCard,SOurcesCard</div>",
     action: "Commit",
@@ -34,7 +34,7 @@ const mockAcitvitys = [
     type: "PushEvent",
     user: "yangjiakai",
     avatar: "https://avatars.githubusercontent.com/u/35951244?",
-    repo: "yangjiakai/lux-admin-vuetify3",
+    repo: "yangjiakai/lux-nuxt3",
     content:
       "<p>Update ChatBot</p><br/><div><span class='mr-1'>✅</span> Chatbot1 Add Stream</div><div><span class='mr-1'>✅</span> Add ScrollToBottom Common Method</div>",
     action: "Commit",

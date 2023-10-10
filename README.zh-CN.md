@@ -28,30 +28,30 @@
 <br>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.zh-CN.md">简体中文</a>| <a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.jp.md">日本語</a>
+<a href="https://github.com/yangjiakai/lux-nuxt3/blob/main/README.md">English</a>|<b> 简体中文</b> | <a href="https://github.com/yangjiakai/lux-nuxt3/blob/main/README.jp.md">日本語</a>
 </p>
 
 ## 📖Introduction
 
 > Goal: Creating the best Vuetify 3 Admin open-source template.
 
-Built upon the elegant themes of Vuetify, we have established a clear and efficient project structure, integrating the latest technology frameworks. This project aims to address a wide range of common technical requirements and features, while incorporating an AI assistant for a more intelligent experience. Additionally, we ensure that all pages are adaptive across multiple devices, achieving a seamless cross-platform compatibility.
+在 Vuetify 精美的主题基础上，我们构建了一个清晰且高效的项目逻辑架构，整合了最新的技术框架。本项目旨在实现各种常见的技术需求和功能，同时融合了 AI 助手，以提供更智能化的体验。此外，我们确保所有页面在多种设备上均能自适应展示，实现优雅的跨平台兼容性。
 
 ## 📖Other Versions
 
 ### SPA Version
 
-Full Version: [lux-nuxt3](https://github.com/yangjiakai/lux-nuxt3)
+SPA 完整版: [lux-nuxt3](https://github.com/yangjiakai/lux-nuxt3)
 
-Simplified I18n Version: [lux-vuetify3-i18n](https://github.com/yangjiakai/vuetify3-lux-admin-template-i18n)
+SPA 简化国际化模板 [lux-vuetify3-i18n](https://github.com/yangjiakai/vuetify3-lux-admin-template-i18n)
 
-Simplified Chinese Version [lux-vuetify3-zh](https://github.com/yangjiakai/vuetify3-lux-admin-template-zh)
+SPA 简化中文模板 [lux-vuetify3-zh](https://github.com/yangjiakai/vuetify3-lux-admin-template-zh)
 
 ### Nuxt3 Version
 
-Nuxt3 Full Version [lux-nuxt3](https://github.com/yangjiakai/lux-nuxt3)
+Nuxt3 完整版 [lux-nuxt3](https://github.com/yangjiakai/lux-nuxt3)
 
-Nuxt3 Simplified Version [lux-nuxt3-template](https://github.com/yangjiakai/lux-nuxt3)
+Nuxt3 简化版 [lux-nuxt3-template](https://github.com/yangjiakai/lux-nuxt3)
 
 ## 📖Documents
 
@@ -62,32 +62,32 @@ Nuxt3 Simplified Version [lux-nuxt3-template](https://github.com/yangjiakai/lux-
 - 📖 [Vue 3.x](https://github.com/vuejs/core)
 - 📖 [Vite 4.x](https://github.com/vitejs/vite)
 - 📖 [Nuxt 3.x](https://github.com/nuxt/nuxt)
-- 📖 UI Framework [Vuetify 3](https://next.vuetifyjs.com/en/)
-- 📖 Vitest [Vitest](https://vitest.dev/)
+- 📖 UI 框架 [Vuetify 3](https://next.vuetifyjs.com/en/)
+- 📖 测试框架 [Vitest](https://vitest.dev/)
 - 📖 TypeScript
-- 📦 Component Auto Importing
-- 🍍 [Pinia](https://pinia.vuejs.org/)
-- 📔 `<script setup>`
-- 📚 Use icons from any icon sets in [Iconify](https://icon-sets.iconify.design/)
-- ☁️ Deploy on Netlify, zero-config
-- 🔑 Firebase auth
+- 📦 组件自动导入
+- 🍍 通过 [Pinia](https://pinia.vuejs.org/)进行状态管理
+- 📔 使用新的 `<script setup>` 语法
+- 📚 使用任意的图标集 [Iconify](https://icon-sets.iconify.design/)
+- ☁️ 零配置部署在 Netlify
+- 🔑 Firebase 授权
 - 📈 Echarts, ApexChart
-- 🧭 Openai, Chatgpt
-- 🌍 vue-i18n
+- 🧭 Openai, Chatgpt 支持
+- 🌍 vue-i18n 多语言支持
 - 📚 virtual-scroller , vuedraggable , perfect-scrollbar
-- 📝 Rich Text Editor
-- 📇 Responsive multi-platform adaptive
+- 📝 富文本编辑器
+- 📇 响应式多平台自适应
 
-## 📈 Project Activity
+## 📈 项目活跃度
 
 ![Alt](https://repobeats.axiom.co/api/embed/306361b2af1a8556f64a0a828e1726a94bff36f0.svg "Repobeats analytics image")
 
-## 💬Contact Me
+## 💬 联络我
 
 - Email <a href="mailto:yjkbako@gmail.com">yjkbako@gmail.com</a>
 - Twitter https://twitter.com/baibaixiang
 
-## 💌Preview
+## 项目预览
 
 ![DashBoard](/assets/images/preview/Dashboard.png)
 
@@ -106,9 +106,9 @@ Nuxt3 Simplified Version [lux-nuxt3-template](https://github.com/yangjiakai/lux-
 
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
 
-## 👻Try it now!
+## 👻 现在可以试试!
 
-```
+```bash
 git clone https://github.com/yangjiakai/lux-nuxt3.git
 
 cd lux-nuxt3
