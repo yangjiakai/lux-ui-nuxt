@@ -15,6 +15,13 @@ import TableCard from '~/components/dashboard/TableCard.vue';
 import ActivityCard from '~/components/dashboard/ActivityCard.vue';
 import TicketsCard from '~/components/dashboard/TicketsCard.vue';
 
+useHead({
+  title: 'Lux-Nuxt3',
+  meta: [
+    { name: 'description', content: 'Lux-Nuxt3-Vuetify3-Admin' }
+  ],
+})
+
 const appStore = useAppStore();
 const desserts = [
   {
