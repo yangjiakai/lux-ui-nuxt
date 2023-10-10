@@ -54,12 +54,16 @@ const chartOptions = computed(() => {
   <!-- html -->
   <!-- ------------------------------------ -->
   <VCard elevation="10">
-    <span class="lstick"></span>
+    <v-card-title>
+      <h6 class="text-h6 pa-2 d-flex align-center font-weight-bold">
+        <span class="flex-fill font-weight-bold">Visits<span class="text-body-2 ml-2 text-grey">(From
+            Devices)</span></span>
+      </h6>
+    </v-card-title>
+    <v-divider></v-divider>
+
     <v-card-text>
-      <div>
-        <h3 class="text-h5 title mb-1">Visits</h3>
-        <h5 class="text-subtitle-1">From Devices</h5>
-      </div>
+
       <div class="mt-3 pt-5 position-relative">
         <apexchart type="donut" height="290" :options="chartOptions" :series="chartOptions.series"></apexchart>
       </div>
