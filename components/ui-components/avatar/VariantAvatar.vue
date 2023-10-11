@@ -4,13 +4,13 @@ import { Icon } from '@iconify/vue';
 <template>
     <div class="d-flex align-center gap-2 justify-center">
         <v-avatar size="40" color="primary" variant="flat" rounded="sm">
-            <Icon icon="solar:emoji-funny-circle-line-duotone" />
+            <Icon width="32" icon="solar:emoji-funny-circle-line-duotone" />
         </v-avatar>
         <v-avatar size="40" color="primary" variant="flat" rounded="md">
-            <Icon icon="solar:emoji-funny-circle-line-duotone" />
+            <Icon width="32" icon="solar:emoji-funny-circle-line-duotone" />
         </v-avatar>
         <v-avatar size="40" color="primary" variant="flat" rounded="lg">
-            <Icon icon="solar:emoji-funny-circle-line-duotone" />
+            <Icon width="32" icon="solar:emoji-funny-circle-line-duotone" />
         </v-avatar>
     </div>
 </template>
