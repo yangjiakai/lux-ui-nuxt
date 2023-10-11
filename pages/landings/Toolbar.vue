@@ -17,25 +17,34 @@ import UiCard from "@/components/common/UiCard.vue";
   <!-- ---------------------------------------------- -->
   <!---Top Toolbar -->
   <!-- ---------------------------------------------- -->
+  <v-row>
+    <v-col cols="12">
+      <UiCard title="Toolbar1">
+        <Toolbar1 />
+      </UiCard>
+    </v-col>
+    <v-col cols="12">
+      <UiCard title="Toolbar2">
+        <Toolbar2 />
+      </UiCard>
+    </v-col>
+    <v-col cols="12">
+      <UiCard title="Toolbar3">
+        <Toolbar3 />
+      </UiCard>
+    </v-col>
+    <v-col cols="12">
+      <UiCard title="Toolbar4">
+        <Toolbar4 />
+      </UiCard>
+    </v-col>
+    <v-col cols="12">
+      <UiCard title="Toolbar5">
+        <Toolbar5 />
+      </UiCard>
+    </v-col>
 
-  <UiCard title="Toolbar1">
-    <Toolbar1 />
-  </UiCard>
-
-  <UiCard title="Toolbar2">
-    <Toolbar2 />
-  </UiCard>
-
-  <UiCard title="Toolbar3">
-    <Toolbar3 />
-  </UiCard>
-
-  <UiCard title="Toolbar4">
-    <Toolbar4 />
-  </UiCard>
-  <UiCard title="Toolbar5">
-    <Toolbar5 />
-  </UiCard>
+  </v-row>
 </template>
 
 <style lang="scss"></style>

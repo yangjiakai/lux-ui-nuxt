@@ -12,7 +12,7 @@ const show = ref(true);
 </script>
 
 <template>
-  <v-card class="mb-5">
+  <v-card>
     <v-card-title>
       <span class="text-h6 font-weight-middle"> {{ props.title }}</span>
       <v-spacer></v-spacer>
