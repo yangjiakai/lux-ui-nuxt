@@ -7,7 +7,7 @@
       <v-expansion-panel-title expand-icon="mdi-plus" collapse-icon="mdi-minus" class="text-h6">
         Accordion 1
       </v-expansion-panel-title>
-      <v-expansion-panel-text class="text-caption">
+      <v-expansion-panel-text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.
@@ -16,13 +16,13 @@
     </v-expansion-panel>
 
     <v-expansion-panel elevation="10">
-      <v-expansion-panel-title class="text-h6">
+      <v-expansion-panel-title class="card-title">
         Accordion 2
         <template v-slot:actions="{ expanded }">
           <v-icon :color="!expanded ? 'teal' : ''" :icon="expanded ? 'mdi-pencil' : 'mdi-check'"></v-icon>
         </template>
       </v-expansion-panel-title>
-      <v-expansion-panel-text class="text-caption">
+      <v-expansion-panel-text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.
@@ -38,11 +38,12 @@
           </v-icon>
         </template>
       </v-expansion-panel-title>
-      <v-expansion-panel-text class="text-caption">
+      <v-expansion-panel-text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.
       </v-expansion-panel-text>
-    <v-divider></v-divider>
-  </v-expansion-panel>
-</v-expansion-panels></template>
+      <v-divider></v-divider>
+    </v-expansion-panel>
+  </v-expansion-panels>
+</template>
