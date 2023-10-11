@@ -1,13 +1,13 @@
 html {
   font-family: $font-family;
-  font-size: 15px;
+
 
   .v-application {
     [class*="text-"] {
       font-family: $font-family, sans-serif !important;
     }
 
-    font-size: 15px;
+
     ;
     font-family: $font-family,
 
@@ -132,6 +132,7 @@ html {
     }
 
   }
+
 
 
 

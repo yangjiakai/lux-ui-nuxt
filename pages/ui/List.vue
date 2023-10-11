@@ -17,60 +17,54 @@ import ScrollableList from '@/components/ui-components/list/ScrollableList.vue';
 
 <template>
     <v-row>
-        <v-col cols="12">
-            <UiParentCard title="List">
-                <v-row>
-                    <!-- Basic -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Simple List">
-                            <SimpleList />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Nested List -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Nested List">
-                            <NestedList />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Folder List -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Folder List">
-                            <FolderList />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- DisabledList-->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Disabled List">
-                            <DisabledList />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Radio Button List -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Switch List">
-                            <SwitchList />
-                        </UiChildCard>
-                    </v-col>
+        <!-- Basic -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Simple List">
+                <SimpleList />
+            </UiChildCard>
+        </v-col>
+        <!-- Nested List -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Nested List">
+                <NestedList />
+            </UiChildCard>
+        </v-col>
+        <!-- Folder List -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Folder List">
+                <FolderList />
+            </UiChildCard>
+        </v-col>
+        <!-- DisabledList-->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Disabled List">
+                <DisabledList />
+            </UiChildCard>
+        </v-col>
+        <!-- Radio Button List -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Switch List">
+                <SwitchList />
+            </UiChildCard>
+        </v-col>
 
-                    <!-- Rounded List -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Rounded List">
-                            <RoundedList />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Custom Aligned List -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Custom Aligned List">
-                            <CustomAlignList />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Scrollable List -->
-                    <v-col cols="12" md="4" lg="3">
-                        <UiChildCard title="Scrollable List">
-                            <ScrollableList />
-                        </UiChildCard>
-                    </v-col>
-                </v-row>
-            </UiParentCard>
+        <!-- Rounded List -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Rounded List">
+                <RoundedList />
+            </UiChildCard>
+        </v-col>
+        <!-- Custom Aligned List -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Custom Aligned List">
+                <CustomAlignList />
+            </UiChildCard>
+        </v-col>
+        <!-- Scrollable List -->
+        <v-col cols="12" md="4" lg="3">
+            <UiChildCard title="Scrollable List">
+                <ScrollableList />
+            </UiChildCard>
         </v-col>
     </v-row>
 </template>

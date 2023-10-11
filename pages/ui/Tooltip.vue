@@ -1,26 +1,27 @@
 <script setup>
 
-import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
+
 import SimpleTooltip from "@/components/ui-components/tooltip/SimpleTooltip.vue";
 import IconTooltip from "@/components/ui-components/tooltip/IconTooltip.vue";
 import ToggleTolltip from "@/components/ui-components/tooltip/ToggleTolltip.vue";
+import UiCard from '@/components/common/UiCard.vue';
 </script>
 <template>
     <v-row>
         <v-col cols="12" md="6">
-            <UiParentCard title="Simple">
+            <UiCard title="Simple">
                 <SimpleTooltip />
-            </UiParentCard>
+            </UiCard>
         </v-col>
         <v-col cols="12" md="6">
-            <UiParentCard title="Icon">
+            <UiCard title="Icon">
                 <IconTooltip />
-            </UiParentCard>
+            </UiCard>
         </v-col>
         <v-col cols="12">
-            <UiParentCard title="Toggle Tolltip">
+            <UiCard title="Toggle Tolltip">
                 <ToggleTolltip />
-            </UiParentCard>
+            </UiCard>
         </v-col>
     </v-row>
 </template>

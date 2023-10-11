@@ -38,7 +38,7 @@ const BLUE_THEME: ThemeTypes = {
 
 const GRAY_THEME: ThemeTypes = {
     name: 'GRAY_THEME',
-
+    dark: false,
     variables: {
         'border-color': '#e5eaef',
     },

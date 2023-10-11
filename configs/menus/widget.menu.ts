@@ -5,9 +5,14 @@ export default [
     regex: /^\/widget/,
     items: [
       {
-        icon: "solar:video-library-line-duotone",
+        icon: "solar:clapperboard-edit-line-duotone",
         text: "MD Editor",
         link: "/widget/md-editor",
+      },
+      {
+        icon: "solar:video-library-line-duotone",
+        text: "Lottie Animation",
+        link: "/ui/lottie-animation",
       },
     ],
   },

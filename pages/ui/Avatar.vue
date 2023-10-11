@@ -16,41 +16,35 @@ import SizeAvatar from '@/components/ui-components/avatar/SizeAvatar.vue';
 
 <template>
     <v-row>
-        <v-col cols="12">
-            <UiParentCard title="Avatar">
-                <v-row>
-                    <!-- Image Avatar -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Image Avatars">
-                            <ImageAvatar />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Letter Avatar -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Letter Avatars">
-                            <LetterAvatar />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Icon Avatar -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Icon Avatars">
-                            <IconAvatar />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Variant Avatar -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Variant" class="pb-10">
-                            <VariantAvatar />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Size Avatar -->
-                    <v-col cols="12" lg="8">
-                        <UiChildCard title="Sizes">
-                            <SizeAvatar />
-                        </UiChildCard>
-                    </v-col>
-                </v-row>
-            </UiParentCard>
+        <!-- Image Avatar -->
+        <v-col cols="12" lg="4">
+            <UiChildCard title="Image Avatars">
+                <ImageAvatar />
+            </UiChildCard>
+        </v-col>
+        <!-- Letter Avatar -->
+        <v-col cols="12" lg="4">
+            <UiChildCard title="Letter Avatars">
+                <LetterAvatar />
+            </UiChildCard>
+        </v-col>
+        <!-- Icon Avatar -->
+        <v-col cols="12" lg="4">
+            <UiChildCard title="Icon Avatars">
+                <IconAvatar />
+            </UiChildCard>
+        </v-col>
+        <!-- Variant Avatar -->
+        <v-col cols="12" lg="4">
+            <UiChildCard title="Variant" class="pb-10">
+                <VariantAvatar />
+            </UiChildCard>
+        </v-col>
+        <!-- Size Avatar -->
+        <v-col cols="12" lg="8">
+            <UiChildCard title="Sizes">
+                <SizeAvatar />
+            </UiChildCard>
         </v-col>
     </v-row>
 </template>

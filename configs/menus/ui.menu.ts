@@ -4,11 +4,7 @@ export default [
     text: "UI Components",
     regex: /^\/ui/,
     items: [
-      {
-        icon: "solar:video-library-line-duotone",
-        text: "Lottie Animation",
-        link: "/ui/lottie-animation",
-      },
+
       // Alert
       {
         icon: "solar:shield-warning-line-duotone",
