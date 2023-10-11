@@ -3,7 +3,7 @@
 // common components
 import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
 
-import UiChildCard from '@/components/common/UiCard.vue';
+import UiCard from '@/components/common/UiCard.vue';
 
 import DialogsActivator from '@/components/ui-components/dialogs/DialogsActivator.vue';
 import DialogsModel from '@/components/ui-components/dialogs/DialogsModel.vue';
@@ -18,53 +18,47 @@ import DialogsNested from '@/components/ui-components/dialogs/DialogsNested.vue'
 
 <template>
     <v-row>
-        <v-col cols="12">
-            <UiParentCard title="Dialog">
-                <v-row>
-                    <v-col cols="12" sm="12" lg="4">
-                        <UiChildCard title="Simple">
-                            <DialogsActivator />
-                        </UiChildCard>
-                    </v-col>
-                    <v-col cols="12" sm="12" lg="4">
-                        <UiChildCard title="V-model">
-                            <DialogsModel />
-                        </UiChildCard>
-                    </v-col>
-                    <v-col cols="12" sm="12" lg="4" class="d-flex align-items-stretch">
-                        <UiChildCard title="Transition">
-                            <DialogsTransitions />
-                        </UiChildCard>
-                    </v-col>
-                    <v-col cols="12" sm="12" lg="4" class="d-flex align-items-stretch">
-                        <UiChildCard title="Form">
-                            <DialogsForm />
-                        </UiChildCard>
-                    </v-col>
-                    <v-col cols="12" sm="12" lg="4" class="d-flex align-items-stretch">
-                        <UiChildCard title="Full screen">
-                            <DialogsFullscreen />
-                        </UiChildCard>
-                    </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Simple">
+                <DialogsActivator />
+            </UiCard>
+        </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="V-model">
+                <DialogsModel />
+            </UiCard>
+        </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Transition">
+                <DialogsTransitions />
+            </UiCard>
+        </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Form">
+                <DialogsForm />
+            </UiCard>
+        </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Dialog Fullscreen">
+                <DialogsFullscreen />
+            </UiCard>
+        </v-col>
 
-                    <v-col cols="12" sm="12" lg="4" class="d-flex align-items-stretch">
-                        <UiChildCard title="Persistent">
-                            <DialogsPersistent />
-                        </UiChildCard>
-                    </v-col>
-                    <v-col cols="12" sm="12" lg="4" class="d-flex align-items-stretch">
-                        <UiChildCard title="Scrollable">
-                            <DialogsScrollable />
-                        </UiChildCard>
-                    </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Persistent">
+                <DialogsPersistent />
+            </UiCard>
+        </v-col>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Scrollable">
+                <DialogsScrollable />
+            </UiCard>
+        </v-col>
 
-                    <v-col cols="12" sm="12" lg="4" class="d-flex align-items-stretch">
-                        <UiChildCard title="Nested Dialog">
-                            <DialogsNested />
-                        </UiChildCard>
-                    </v-col>
-                </v-row>
-            </UiParentCard>
+        <v-col cols="12" sm="12" lg="4">
+            <UiCard title="Nested Dialog">
+                <DialogsNested />
+            </UiCard>
         </v-col>
     </v-row>
 </template>
