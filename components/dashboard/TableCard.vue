@@ -92,8 +92,8 @@ onMounted(() => {
   </v-card>
   <v-card height="400" v-else>
     <v-card-title>
-      <h6 class="text-h6 pa-2 d-flex align-center font-weight-bold">
-        <span class="flex-fill font-weight-bold">Users</span>
+      <h6 class="card-title pa-2">
+        Users
       </h6>
     </v-card-title>
     <v-divider></v-divider>

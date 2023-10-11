@@ -75,11 +75,12 @@ const chartOptions = computed(() => {
   <!-- ------------------------------------ -->
   <VCard elevation="10">
     <v-card-title>
-      <h6 class="text-h6 pa-2 d-flex align-center font-weight-bold">
+      <h6 class="card-title pa-2">
         <span class="flex-fill font-weight-bold">Site Visits<span class="text-body-2 ml-2 text-grey">(Year
             2023)</span></span>
       </h6>
     </v-card-title>
+    <v-divider></v-divider>
     <v-card-text>
       <div class="d-sm-flex align-center">
 
@@ -121,7 +122,7 @@ const chartOptions = computed(() => {
         </v-row>
       </v-alert>
       <div class="mt-5">
-        <apexchart type="line" height="220px" :options="chartOptions" :series="chartOptions.series">
+        <apexchart type="line" height="200px" :options="chartOptions" :series="chartOptions.series">
         </apexchart>
       </div>
     </v-card-text>

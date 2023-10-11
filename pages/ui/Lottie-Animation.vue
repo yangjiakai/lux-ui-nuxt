@@ -86,7 +86,7 @@ const animations = ref([
     <v-row>
       <v-col cols="12" sm="6" md="4" lg="3" v-for="animation in animations" :key="animation.url">
         <v-card>
-          <v-card-title class="font-weight-bold text-grey-darken-3">
+          <v-card-title class="card-title">
             {{ animation.name }}
           </v-card-title>
           <v-divider></v-divider>

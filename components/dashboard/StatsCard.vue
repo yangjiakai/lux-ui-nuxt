@@ -34,10 +34,10 @@ const earningCardsData = [
                         <div class="d-flex align-center">
                             <Icon class="text-primary mr-5" :icon="revenuecard.img" width="40" />
                             <div>
-                                <h4 class="text-subtitle-1">
+                                <h4 class="card-title mb-2">
                                     {{ revenuecard.title }}
                                 </h4>
-                                <h2 class="text-h5">
+                                <h2 class="text-h5 ">
                                     {{ revenuecard.number }}
                                 </h2>
                             </div>
