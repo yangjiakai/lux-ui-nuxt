@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-const props = defineProps(['icon']);
+import { Icon } from "@iconify/vue";
 const folders = ref([
     {
         subtitle: 'Jan 9, 2022',
@@ -24,11 +23,8 @@ const folders = ref([
         <v-card variant="outlined">
             <v-list-item v-for="folder in folders" :key="folder.title" :subtitle="folder.subtitle">
                 <template v-slot:prepend>
-                    <v-avatar color="grey400" size="20">
-
-                    </v-avatar>
+                    <Icon width="20" class="mr-3" icon="solar:album-line-duotone" />
                 </template>
-
                 <template v-slot:title>
                     <h5 class="text-subtitle-1">{{ folder.title }}</h5>
                 </template>

@@ -12,7 +12,6 @@ html {
     font-family: $font-family,
 
     sans-serif !important;
-
   }
 
   audio,
@@ -86,8 +85,6 @@ html {
       display: flex;
       align-items: center;
     }
-
-
   }
 
   // Outline Card
@@ -95,19 +92,13 @@ html {
     border-color: #e5eaef;
   }
 
-
-
-
   .v-btn {
     text-transform: capitalize;
   }
 
-
   .avtar-border {
     border: 2px solid rgb(var(--v-theme-surface)) !important;
   }
-
-
 
   // input
   // comfortable

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { Icon } from '@iconify/vue';
 const list1 = ref([
     {
         name: 'Sample Page',
@@ -26,7 +26,7 @@ const list1 = ref([
             <v-list-item class="mb-2" v-for="list in list1" :value="list" rounded="md" :key="list.name"
                 active-color="primary">
                 <template v-slot:prepend>
-                    <v-icon>mdi-folder</v-icon>
+                    <Icon width="20" class="mr-3" icon="solar:folder-open-line-duotone" />
                 </template>
                 <v-list-item-title v-text="list.name"></v-list-item-title>
             </v-list-item>

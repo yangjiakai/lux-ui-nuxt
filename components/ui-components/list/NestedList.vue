@@ -1,40 +1,33 @@
 <script setup lang="ts">
-
-
-const props = defineProps(['icon']);
-// List 2 data
-const open = ref(['Users']);
+import { Icon } from "@iconify/vue";
 </script>
 <template>
     <v-list>
         <v-card variant="outlined" class="py-2">
             <div class="text-subttile-2 pl-4 py-3">Nested List Items</div>
-            <v-list-item value="" class="mb-2" active-color="primary">
+            <v-list-item value="Send" class="mb-2" active-color="primary">
                 <template v-slot:prepend>
-
-                    <v-icon class="mr-2">mdi-send</v-icon>
+                    <Icon width="20" class="mr-3" icon="solar:map-arrow-right-line-duotone" />
                 </template>
                 <v-list-item-title>Sent Mail</v-list-item-title>
             </v-list-item>
-            <v-list-item value="" class="mb-2" active-color="primary">
+            <v-list-item value="draft" class="mb-2" active-color="primary">
                 <template v-slot:prepend>
-
-                    <v-icon class="mr-2">mdi-email</v-icon>
+                    <Icon width="20" class="mr-3" icon="solar:letter-unread-line-duotone" />
                 </template>
                 <v-list-item-title>Drafts</v-list-item-title>
             </v-list-item>
             <v-list-group value="Users">
                 <template v-slot:activator="{ props }">
-                    <v-list-item v-bind="props" rounded="md" active-color="primary" title="inbox">
+                    <v-list-item v-bind="props" rounded="md" active-color="primary" title="Inbox">
                         <template v-slot:prepend>
-
-                            <v-icon class="mr-2">mdi-inbox</v-icon>
+                            <Icon width="20" class="mr-3" icon="solar:letter-opened-line-duotone" />
                         </template>
                     </v-list-item>
                 </template>
                 <v-list-item value="Started" active-color="primary" title="Started" rounded="md">
                     <template v-slot:prepend>
-                        <v-icon class="mr-2">mdi-circle</v-icon>
+                        <Icon width="20" class="mr-3" icon="solar:star-line-duotone" />
                     </template>
                 </v-list-item>
             </v-list-group>
