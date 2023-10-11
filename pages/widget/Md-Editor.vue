@@ -60,19 +60,20 @@ const text = ref(markdown);
 </script>
 
 <template>
-  <UiCard title="MdEditor">
-    <MdEditor v-model="text" />
-  </UiCard>
+  <v-row>
+    <v-col cols="12">
+      <UiCard title="MdEditor">
+        <MdEditor v-model="text" />
+      </UiCard>
 
-  <UiCard title="MdEditor">
-    <div class="d-flex">
-      <MdPreview :editorId="id" :modelValue="text" />
-      <v-card class="pa-3" variant="outlined" width="200" height="300">
-        <MdCatalog :editorId="id" :scrollElement="scrollElement" />
-      </v-card>
+    </v-col>
+    <v-col>
+      <UiCard title="MdPreview">
+        <MdPreview :editorId="id" :modelValue="text" />
 
-    </div>
-  </UiCard>
+      </UiCard>
+    </v-col>
+  </v-row>
 </template>
 
 <style scoped lang="scss"></style>
