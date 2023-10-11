@@ -3,7 +3,7 @@
 
 // common components
 
-import UiChildCard from '@/components/common/UiCard.vue';
+import UiCard from '@/components/common/UiCard.vue';
 import BasicTabs from "@/components/ui-components/tabs/BasicTabs.vue";
 import CenterTabs from "@/components/ui-components/tabs/CenterTabs.vue";
 import ColorTabs from "@/components/ui-components/tabs/ColorTabs.vue";
@@ -18,65 +18,59 @@ import AlignEndTabs from "@/components/ui-components/tabs/AlignEndTabs.vue";
 
 <template>
     <v-row>
-        <v-col cols="12">
-            <UiParentCard title="Tabs">
-                <v-row>
-                    <!-- Basic -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Basic">
-                            <BasicTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- With Icons -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Stacked">
-                            <IconsWithLabelTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Center -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Center Active">
-                            <CenterTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Custom Icons -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Custom Icons">
-                            <CustomIcons />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Align Center -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Align Center">
-                            <AlignCenterTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Align End -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Align End">
-                            <AlignEndTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Icons -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Icon">
-                            <IconTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Disabled -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Disabled">
-                            <DisableTabs />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Colors -->
-                    <v-col cols="12" lg="12">
-                        <UiChildCard title="Colors">
-                            <ColorTabs />
-                        </UiChildCard>
-                    </v-col>
-                </v-row>
-            </UiParentCard>
+        <!-- Basic -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Basic">
+                <BasicTabs />
+            </UiCard>
+        </v-col>
+        <!-- With Icons -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Stacked">
+                <IconsWithLabelTabs />
+            </UiCard>
+        </v-col>
+        <!-- Center -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Center Active">
+                <CenterTabs />
+            </UiCard>
+        </v-col>
+        <!-- Custom Icons -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Custom Icons">
+                <CustomIcons />
+            </UiCard>
+        </v-col>
+        <!-- Align Center -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Align Center">
+                <AlignCenterTabs />
+            </UiCard>
+        </v-col>
+        <!-- Align End -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Align End">
+                <AlignEndTabs />
+            </UiCard>
+        </v-col>
+        <!-- Icons -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Icon">
+                <IconTabs />
+            </UiCard>
+        </v-col>
+        <!-- Disabled -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Disabled">
+                <DisableTabs />
+            </UiCard>
+        </v-col>
+        <!-- Colors -->
+        <v-col cols="12" lg="6">
+            <UiCard title="Colors">
+                <ColorTabs />
+            </UiCard>
         </v-col>
     </v-row>
 </template>
