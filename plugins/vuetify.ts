@@ -47,6 +47,10 @@ export default defineNuxtPlugin((app) => {
     locale: {
       adapter: createVueI18nAdapter({ i18n, useI18n }),
     },
+    default: {
+
+    }
+
   })
   app.vueApp.use(vuetify);
   app.vueApp.use(VueApexCharts);

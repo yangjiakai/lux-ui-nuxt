@@ -4,57 +4,57 @@
 </script>
 <template>
     <div class="d-flex flex-wrap align-center gap-3">
-        <v-chip class="text-body-2">
+        <v-chip class="font-weight-bold">
             <MoodSmileIcon class="mr-2" start size="20" /> Default Filled
         </v-chip>
-        <v-chip class="text-body-2">
+        <v-chip class="font-weight-bold">
             <MoodSmileIcon class="mr-2" start size="20" /> Default Deletable
             <CircleXIcon class="ml-2" start size="20" />
         </v-chip>
-        <v-chip color="primary" class="text-body-2">
+        <v-chip color="primary" class="font-weight-bold">
             <v-avatar start size="25">
-                <img src="https://img.icons8.com/bubbles/50/test-account.png" width="25" />
+                <v-icon color="primary">mdi-check</v-icon>
             </v-avatar> Primary Filled
         </v-chip>
-        <v-chip color="primary" class="text-body-2">
+        <v-chip color="primary" class="font-weight-bold">
             <v-avatar start size="25">
-                <img src="https://img.icons8.com/bubbles/50/test-account.png" width="25" />
+                <v-icon color="primary">mdi-check</v-icon>
             </v-avatar> Primary Deletable
             <CircleXIcon class="ml-2" start size="20" />
         </v-chip>
-        <v-chip color="secondary" class="text-body-2">
+        <v-chip color="secondary" class="font-weight-bold">
             <MoodSmileIcon class="mr-2" start size="20" /> Secondary Filled
         </v-chip>
-        <v-chip color="secondary" class="text-body-2">
+        <v-chip color="secondary" class="font-weight-bold">
             <MoodSmileIcon class="mr-2" start size="20" /> Secondary Deletable
             <CircleXIcon class="ml-2" start size="20" />
         </v-chip>
-        <v-chip color="success" class="text-body-2">
+        <v-chip color="success" class="font-weight-bold">
             <v-avatar start size="25">
-                <img src="https://img.icons8.com/bubbles/50/test-account.png" width="25" />
+                <v-icon color="success">mdi-check</v-icon>
             </v-avatar> Default Filled
         </v-chip>
-        <v-chip color="success" class="text-body-2">
+        <v-chip color="success" class="font-weight-bold">
             <v-avatar start size="25">
-                <img src="https://img.icons8.com/bubbles/50/test-account.png" width="25" />
+                <v-icon color="success">mdi-check</v-icon>
             </v-avatar> Default Deletable
             <CircleXIcon class="ml-2" start size="20" />
         </v-chip>
-        <v-chip color="warning" class="text-body-2">
+        <v-chip color="warning" class="font-weight-bold">
             <MoodSmileIcon class="mr-2" start size="20" /> Default Filled
         </v-chip>
-        <v-chip color="warning" class="text-body-2">
+        <v-chip color="warning" class="font-weight-bold">
             <MoodSmileIcon class="mr-2" start size="20" /> Default Deletable
             <CircleXIcon class="ml-2" start size="20" />
         </v-chip>
-        <v-chip color="error" class="text-body-2">
+        <v-chip color="error" class="font-weight-bold">
             <v-avatar start size="25">
-                <img src="https://img.icons8.com/bubbles/50/test-account.png" width="25" />
+                <v-icon color="error">mdi-check</v-icon>
             </v-avatar> Default Filled
         </v-chip>
-        <v-chip color="error" class="text-body-2">
+        <v-chip color="error" class="font-weight-bold">
             <v-avatar start size="25">
-                <img src="https://img.icons8.com/bubbles/50/test-account.png" width="25" />
+                <v-icon color="error">mdi-check</v-icon>
             </v-avatar> Default Deletable
             <CircleXIcon class="ml-2" start size="20" />
         </v-chip>
