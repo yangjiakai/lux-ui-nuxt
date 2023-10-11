@@ -1,10 +1,5 @@
 <script setup lang="ts">
-
-// common components
-import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
-
 import UiCard from '@/components/common/UiCard.vue';
-
 import DialogsActivator from '@/components/ui-components/dialogs/DialogsActivator.vue';
 import DialogsModel from '@/components/ui-components/dialogs/DialogsModel.vue';
 import DialogsFullscreen from '@/components/ui-components/dialogs/DialogsFullscreen.vue';

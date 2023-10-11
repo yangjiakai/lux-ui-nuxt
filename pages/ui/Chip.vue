@@ -1,10 +1,6 @@
 <script setup lang="ts">
-
 // common components
-
-
 import UiChildCard from '@/components/common/UiCard.vue';
-
 import FilledColor from '@/components/ui-components/chip/FilledColor.vue';
 import Outlined from '@/components/ui-components/chip/Outlined.vue';
 import CustomIcon from '@/components/ui-components/chip/CustomIcon.vue';

@@ -1,10 +1,5 @@
 <script setup lang="ts">
-
-// common components
-import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
-
 import UiChildCard from '@/components/common/UiCard.vue';
-
 import SimpleList from '@/components/ui-components/list/SimpleList.vue';
 import NestedList from '@/components/ui-components/list/NestedList.vue';
 import FolderList from '@/components/ui-components/list/FolderList.vue';

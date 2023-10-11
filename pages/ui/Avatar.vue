@@ -1,11 +1,5 @@
 <script setup lang="ts">
-
-// common components
-import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
-
 import UiChildCard from '@/components/common/UiCard.vue';
-
-
 import ImageAvatar from '@/components/ui-components/avatar/ImageAvatar.vue';
 import LetterAvatar from '@/components/ui-components/avatar/LetterAvatar.vue';
 import IconAvatar from '@/components/ui-components/avatar/IconAvatar.vue';
