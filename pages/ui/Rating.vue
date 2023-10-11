@@ -1,9 +1,7 @@
 <script setup lang="ts">
 
-// common components
-import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
 
-import UiChildCard from '@/components/common/UiCard.vue';
+import UiCard from '@/components/common/UiCard.vue';
 
 import BasicRatting from "@/components/ui-components/ratting/BasicRatting.vue";
 import ClearableRatting from "@/components/ui-components/ratting/ClearableRatting.vue";
@@ -19,64 +17,64 @@ import LengthRatting from "@/components/ui-components/ratting/LengthRatting.vue"
 <template>
     <v-row>
         <v-col cols="12">
-            <UiParentCard title="Rating">
-                <v-row>
-                    <!-- Basic -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Basic">
-                            <BasicRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Read Only -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Read Only">
-                            <ReadOnlyRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Clearable -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Clearable">
-                            <ClearableRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Hover -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Hover">
-                            <HoverRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Half Ratting -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Half Ratting">
-                            <HalfRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Length Ratting -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Length">
-                            <LengthRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Label -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Label">
-                            <LabelRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Icons -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Icons">
-                            <IconsRatting />
-                        </UiChildCard>
-                    </v-col>
-                    <!-- Size -->
-                    <v-col cols="12" lg="4">
-                        <UiChildCard title="Size">
-                            <SizeRatting />
-                        </UiChildCard>
-                    </v-col>
-                </v-row>
-            </UiParentCard>
+
+            <v-row>
+                <!-- Basic -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Basic">
+                        <BasicRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Read Only -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Read Only">
+                        <ReadOnlyRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Clearable -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Clearable">
+                        <ClearableRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Hover -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Hover">
+                        <HoverRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Half Ratting -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Half Ratting">
+                        <HalfRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Length Ratting -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Length">
+                        <LengthRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Label -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Label">
+                        <LabelRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Icons -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Icons">
+                        <IconsRatting />
+                    </UiCard>
+                </v-col>
+                <!-- Size -->
+                <v-col cols="12" md="4" lg="3">
+                    <UiCard title="Size">
+                        <SizeRatting />
+                    </UiCard>
+                </v-col>
+            </v-row>
+
         </v-col>
     </v-row>
 </template>

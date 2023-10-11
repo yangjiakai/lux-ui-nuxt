@@ -1,9 +1,8 @@
 <script setup lang="ts">
 
-// common components
-import BaseBreadcrumb from '@/components/common/BaseBreadcrumb.vue';
 
-import UiChildCard from '@/components/common/UiCard.vue';
+
+import UiCard from '@/components/common/UiCard.vue';
 
 import MenusAnchor from "@/components/ui-components/menus/MenusAnchor.vue";
 import MenusHover from "@/components/ui-components/menus/MenusHover.vue";
@@ -13,29 +12,29 @@ import MenusPopover from "@/components/ui-components/menus/MenusPopover.vue";
 
 <template>
   <v-row>
-    <UiParentCard title="Menus">
-      <v-row>
-        <v-col cols="12" sm="12" lg="6">
-          <UiChildCard title="Anchor">
-            <MenusAnchor />
-          </UiChildCard>
-        </v-col>
-        <v-col cols="12" sm="12" lg="6">
-          <UiChildCard title="Hover">
-            <MenusHover />
-          </UiChildCard>
-        </v-col>
-        <v-col cols="12" sm="12" lg="6">
-          <UiChildCard title="Activator and tooltip">
-            <MenusActivatorTooltip />
-          </UiChildCard>
-        </v-col>
-        <v-col cols="12" sm="12" lg="6">
-          <UiChildCard title="Popover">
-            <MenusPopover />
-          </UiChildCard>
-        </v-col>
-      </v-row>
-    </UiParentCard>
+    <v-row>
+      <v-col cols="12" md="4" lg="3">
+        <UiCard title="Anchor">
+
+          <MenusAnchor />
+        </UiCard>
+      </v-col>
+      <v-col cols="12" md="4" lg="3">
+        <UiCard title="Hover">
+          <MenusHover />
+        </UiCard>
+      </v-col>
+      <v-col cols="12" md="4" lg="3">
+        <UiCard title="Activator and tooltip">
+          <MenusActivatorTooltip />
+        </UiCard>
+      </v-col>
+      <v-col cols="12" md="4" lg="3">
+        <UiCard title="Popover">
+          <MenusPopover />
+        </UiCard>
+      </v-col>
+    </v-row>
+
   </v-row>
 </template>
