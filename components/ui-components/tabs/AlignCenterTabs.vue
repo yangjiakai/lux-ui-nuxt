@@ -23,7 +23,7 @@ const tab = ref(null);
         <v-window-item value="2">
           <v-row>
             <v-col v-for="i in 6" :key="i" cols="12" md="4" sm="6">
-              <v-img src="`https://picsum.photos/500/300?image=${i * i * 5 + 10}`" cover class="w-100"
+              <v-img :src="`https://picsum.photos/500/300?image=${i * i * 5 + 10}`" alt="tab" cover class="w-100"
                 height="250"></v-img>
             </v-col>
           </v-row>
@@ -31,11 +31,12 @@ const tab = ref(null);
         <v-window-item value="3">
           <v-row>
             <v-col v-for="i in 6" :key="i" cols="12" md="4" sm="6">
-              <v-img src="`https://picsum.photos/500/300?image=${i * i * 5 + 10}`" cover class="w-100"
+              <v-img :src="`https://picsum.photos/500/300?image=${i * i * 5 + 10}`" alt="tab" cover class="w-100"
                 height="250"></v-img>
             </v-col>
           </v-row>
         </v-window-item>
       </v-window>
     </v-card-text>
-</v-card></template>
+  </v-card>
+</template>
