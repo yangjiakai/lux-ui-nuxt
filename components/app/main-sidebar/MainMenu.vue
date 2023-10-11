@@ -19,7 +19,7 @@ const props = defineProps({
           <!-- menu level 1 -->
           <v-list-item v-if="!menuItem.items" :to="menuItem.link" density="compact" color="primary">
             <template v-slot:prepend>
-              <Icon class="mx-2 mr-5" width="22" :icon="menuItem.icon" />
+              <Icon class="mx-2 mr-5" width="20" :icon="menuItem.icon" />
             </template>
             <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
           </v-list-item>
@@ -28,7 +28,7 @@ const props = defineProps({
             <template v-slot:activator="{ props }">
               <v-list-item v-bind="props" color="primary">
                 <template v-slot:prepend>
-                  <Icon class="mx-2 mr-5" width="22" :icon="menuItem.icon" />
+                  <Icon class="mx-2 mr-5" width="20" :icon="menuItem.icon" />
                 </template>
                 <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
               </v-list-item>
@@ -37,7 +37,7 @@ const props = defineProps({
             <v-list-item v-for="subMenuItem in menuItem.items" :key="subMenuItem.key" :to="subMenuItem.link"
               density="compact" color="primary">
               <template v-slot:prepend>
-                <Icon class="mx-2 mr-5" width="22" :icon="subMenuItem.icon" />
+                <Icon class="mx-2 mr-5" width="20" :icon="subMenuItem.icon" />
               </template>
               <v-list-item-title v-text="subMenuItem.text" class="font-weight-bold"></v-list-item-title>
             </v-list-item>

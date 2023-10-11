@@ -1,8 +1,8 @@
 export default [
   {
-    icon: "solar:shield-minus-line-duotone",
+    icon: "solar:library-bold-duotone",
     text: "UI Components",
-    regex: /^\/auth/,
+    regex: /^\/ui/,
     items: [
       {
         icon: "solar:video-library-line-duotone",
@@ -11,61 +11,61 @@ export default [
       },
       // Alert
       {
-        icon: "mdi:alert",
+        icon: "solar:shield-warning-line-duotone",
         text: "Alert",
         link: "/ui/alert",
       },
       // Accordion
       {
-        icon: "mdi:format-list-bulleted-type",
+        icon: "solar:list-up-bold-duotone",
         text: "Accordion",
         link: "/ui/accordion",
       },
       // Avatar
       {
-        icon: "mdi:account-circle-outline",
+        icon: "solar:user-circle-line-duotone",
         text: "Avatar",
         link: "/ui/avatar",
       },
       // Chip
       {
-        icon: "mdi:chip",
+        icon: "solar:tag-horizontal-line-duotone",
         text: "Chip",
         link: "/ui/chip",
       },
       // Dialog
       {
-        icon: "mdi:chip",
+        icon: "solar:subtitles-line-duotone",
         text: "Dialog",
         link: "/ui/dialog",
       },
       // List
       {
-        icon: "mdi:format-list-bulleted-type",
+        icon: "solar:checklist-line-duotone",
         text: "List",
         link: "/ui/list",
       },
       // Menus
       {
-        icon: "mdi:menu",
+        icon: "solar:hamburger-menu-line-duotone",
         text: "Menus",
         link: "/ui/menus",
       },
       // Rating
       {
-        icon: "mdi:star",
+        icon: "solar:stars-minimalistic-line-duotone",
         text: "Rating",
         link: "/ui/rating",
       },
       // Tabs
       {
-        icon: "mdi:tab",
+        icon: "solar:plate-line-duotone",
         text: "Tabs",
         link: "/ui/tabs",
       },
       // Tooltip
       {
-        icon: "mdi:tooltip-text",
+        icon: "solar:pin-list-line-duotone",
         text: "Tooltip",
         link: "/ui/tooltip",
       }

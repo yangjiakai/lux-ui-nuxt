@@ -1,6 +1,6 @@
 export default [
   {
-    icon: "solar:shield-minus-line-duotone",
+    icon: "solar:diploma-verified-bold-duotone",
     text: "Auth Pages",
     regex: /^\/auth/,
     items: [
