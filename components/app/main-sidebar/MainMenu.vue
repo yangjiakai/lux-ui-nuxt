@@ -9,7 +9,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <v-list class="menu-list  " nav dense>
+  <v-list class="text-grey-darken-1 " nav dense>
     <template v-for="menuArea in props.menu" :key="menuArea.key">
       <div v-if="(menuArea.key || menuArea.text)" class="pa-1 mt-2 text-overline">
         {{ menuArea.text }}

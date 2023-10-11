@@ -68,12 +68,6 @@ export default [
         icon: "mdi:tooltip-text",
         text: "Tooltip",
         link: "/ui/tooltip",
-      },
-      // Typogaphy
-      {
-        icon: "mdi:text",
-        text: "Typography",
-        link: "/ui/typography",
       }
     ],
 

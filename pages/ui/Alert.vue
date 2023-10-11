@@ -10,21 +10,6 @@ import Icons from '@/components/ui-components/alert/Icons.vue';
 import Outlined from '@/components/ui-components/alert/Outlined.vue';
 import Closable from '@/components/ui-components/alert/Closable.vue';
 
-
-// theme breadcrumb
-const page = ref({ title: 'Alert' });
-const breadcrumbs = ref([
-  {
-    text: 'Dashboard',
-    disabled: false,
-    href: '#'
-  },
-  {
-    text: 'Alert',
-    disabled: true,
-    href: '#'
-  }
-]);
 </script>
 
 <template>
