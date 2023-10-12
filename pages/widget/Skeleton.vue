@@ -40,9 +40,13 @@ import Types from '~/components/widgets/skeleton/Types.vue';
     <v-col cols="12">
       <UiCard title="table">
         <v-row>
-          <v-col>
+          <v-col v-for="i in 6" cols="12" sm="6" md="4" lg="2">
             <v-card>
-              <v-skeleton-loader type="date-picker"></v-skeleton-loader>
+              <v-skeleton-loader type="list-item-avatar-two-line"></v-skeleton-loader>
+              <v-skeleton-loader type="list-item-avatar-two-line"></v-skeleton-loader>
+              <v-skeleton-loader type="list-item-avatar-two-line"></v-skeleton-loader>
+              <v-skeleton-loader type="list-item-avatar-two-line"></v-skeleton-loader>
+              <v-skeleton-loader type="list-item-avatar-two-line"></v-skeleton-loader>
             </v-card>
           </v-col>
         </v-row>
