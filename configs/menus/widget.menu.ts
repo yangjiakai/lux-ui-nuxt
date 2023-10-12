@@ -24,6 +24,12 @@ export default [
         text: "Faker Api",
         link: "/widget/faker-api",
       },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Skeleton",
+        link: "/widget/skeleton",
+      },
+
     ],
   },
 
