@@ -115,7 +115,7 @@ onMounted(() => {
             <td>
               <div class="d-flex align-center py-2">
                 <v-avatar size="40" class="elevation-1 grey lighten-3">
-                  <img :src="item.user.avatar" />
+                  <img :src="item.user.avatar" alt="user" />
                 </v-avatar>
                 <div class="ml-1">
                   <div class="font-weight-bold">{{ item.user.name }}</div>
