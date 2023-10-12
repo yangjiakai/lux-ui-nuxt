@@ -34,17 +34,16 @@ const changeGradientAngel = () => {
 };
 </script>
 <template>
-  <v-container class="jk-gradient">
-    <div class="display-area">
-      <div class="gradient-list shadow-md">
-        <div class="gradient-card" v-for="gradient in gradients" :key="gradient.name"
-          :style="`background: linear-gradient(${gradient.colors[0]}, ${gradient.colors[1]}`"
-          @click="changeBgColor(gradient)">
-          {{ gradient.name }}
-        </div>
+  <div class="display-area">
+    <div class="gradient-list shadow-md">
+      <div class="gradient-card" v-for="gradient in gradients" :key="gradient.name"
+        :style="`background: linear-gradient(${gradient.colors[0]}, ${gradient.colors[1]}`"
+        @click="changeBgColor(gradient)">
+        {{ gradient.name }}
       </div>
     </div>
-  </v-container>
+  </div>
+
   <v-dialog transition="fade" v-model="isDetailShow">
     <v-card height="80vh" color="red" class="gradient-detail-card" :style="`background: ${bgGradient}`">
       <div class="card-header">

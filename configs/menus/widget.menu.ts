@@ -19,6 +19,11 @@ export default [
         text: "Gradient",
         link: "/widget/gradient",
       },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Faker Api",
+        link: "/widget/faker-api",
+      },
     ],
   },
 
