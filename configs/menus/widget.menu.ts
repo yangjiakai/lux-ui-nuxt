@@ -16,6 +16,11 @@ export default [
       },
       {
         icon: "solar:atom-line-duotone",
+        text: "Color",
+        link: "/widget/color",
+      },
+      {
+        icon: "solar:atom-line-duotone",
         text: "Gradient",
         link: "/widget/gradient",
       },
