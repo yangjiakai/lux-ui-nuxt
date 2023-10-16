@@ -64,6 +64,11 @@ export default [
         icon: "solar:pin-list-line-duotone",
         text: "Tooltip",
         link: "/ui/tooltip",
+      },
+      {
+        icon: "solar:pin-list-line-duotone",
+        text: "TimeLine",
+        link: "/ui/timeline",
       }
     ],
 
