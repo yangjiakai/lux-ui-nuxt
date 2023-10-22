@@ -68,14 +68,7 @@ const chartOptions = computed(() => {
   };
 });
 
-const updateData = () => {
-  chartOptions.value.series[0].data = chartOptions.value.series[0].data.map(
-    (i: number) => i + Math.floor(Math.random() * 100)
-  );
-  chartOptions.value.series[1].data = chartOptions.value.series[1].data.map(
-    (i: number) => i + Math.floor(Math.random() * 100)
-  );
-};
+const updateData = () => {};
 </script>
 
 <template>

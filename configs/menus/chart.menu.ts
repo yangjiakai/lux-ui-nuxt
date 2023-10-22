@@ -10,6 +10,11 @@ export default [
         text: "BaseChart",
         link: "/chart/base",
       },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "TableChart",
+        link: "/chart/tablechart",
+      },
     ],
   },
 ];

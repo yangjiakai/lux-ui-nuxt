@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import { useTheme } from "vuetify";
 const { current } = useTheme();
 /*Chart*/
@@ -15,7 +14,7 @@ const chartOptions = computed(() => {
       padding: { left: 30, right: 0, bottom: 0 },
     },
     plotOptions: {},
-    colors: [current.value.colors.primary, current.value.colors.secondary,],
+    colors: [current.value.colors.primary, current.value.colors.secondary],
     fill: {
       type: "gradient",
       gradient: {
@@ -63,9 +62,8 @@ const chartOptions = computed(() => {
     },
     stroke: { curve: "smooth", width: "4" },
     tooltip: { theme: "dark" },
-  }
+  };
 });
-
 </script>
 
 <template>
@@ -118,7 +116,12 @@ const chartOptions = computed(() => {
         </v-row>
       </v-alert>
       <div class="mt-5">
-        <apexchart type="line" height="220px" :options="chartOptions" :series="chartOptions.series">
+        <apexchart
+          type="line"
+          height="220px"
+          :options="chartOptions"
+          :series="chartOptions.series"
+        >
         </apexchart>
       </div>
     </v-card-text>
