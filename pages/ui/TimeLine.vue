@@ -12,11 +12,8 @@ import WorkFlow from "~/components/ui-components/timeline/WorkFlow.vue";
   <v-row>
     <!-- Basic -->
     <v-col cols="12">
-      <UiCard title="WorkFlow">
-        <WorkFlow />
-      </UiCard>
+      <UiCard title="WorkFlow"> </UiCard>
     </v-col>
-
   </v-row>
 </template>
 
