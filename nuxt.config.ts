@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     },
     ['@nuxtjs/google-fonts', {
       families: {
-        Quicksand: true,
+        Quicksand: [500],
         Inter: [400, 700],
         'Josefin+Sans': true,
         Lato: [100, 300],
