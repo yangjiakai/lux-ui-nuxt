@@ -36,7 +36,7 @@ const BLUE_THEME: ThemeTypes = {
     }
 };
 
-const GRAY_THEME: ThemeTypes = {
+const GRAY_THEME = {
     name: 'GRAY_THEME',
     dark: false,
     variables: {
@@ -47,9 +47,13 @@ const GRAY_THEME: ThemeTypes = {
         secondary: "#0162FD",
         accent: "#705CF6",
         success: "#06d6a0",
-        warning: "#ffd166",
+        warning: "#FFAB00",
         info: "#2196F3",
         error: "#ef476f",
+        'on-success': "#fff",
+        'on-warning': "#fff",
+        'on-info': "#fff",
+        'on-error': "#fff",
         lightprimary: '#f5fcfd',
         lightsecondary: '#E8F7FF',
         lightsuccess: '#E6FFFA',

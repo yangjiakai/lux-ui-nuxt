@@ -11,6 +11,14 @@ import VueApexCharts from "vue3-apexcharts";
 import { createI18n, useI18n } from "vue-i18n";
 import messages from '@/locales/messages';
 
+import {
+  BLUE_THEME,
+  GRAY_THEME,
+} from "@/theme/LightTheme";
+import {
+  DARK_BLUE_THEME,
+} from "@/theme/DarkTheme";
+
 const i18n = createI18n({
   legacy: false,
   locale: 'en',
@@ -19,14 +27,6 @@ const i18n = createI18n({
   silentFallbackWarn: true
 });
 
-
-import {
-  BLUE_THEME,
-  GRAY_THEME,
-} from "@/theme/LightTheme";
-import {
-  DARK_BLUE_THEME,
-} from "@/theme/DarkTheme";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
