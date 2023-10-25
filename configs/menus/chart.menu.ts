@@ -20,6 +20,12 @@ export default [
         icon: "solar:slider-minimalistic-horizontal-line-duotone",
         text: "Annotations",
         link: "/chart/annotations",
+      },
+      // Line Chart
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Line Chart",
+        link: "/chart/linechart",
       }
     ],
 
