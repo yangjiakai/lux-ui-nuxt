@@ -26,6 +26,12 @@ export default [
         icon: "solar:slider-minimalistic-horizontal-line-duotone",
         text: "Line Chart",
         link: "/chart/linechart",
+      },
+      // Aera Chart
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Area Chart",
+        link: "/chart/areachart",
       }
     ],
 
