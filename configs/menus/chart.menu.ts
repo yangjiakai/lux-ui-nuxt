@@ -15,6 +15,13 @@ export default [
         text: "TableChart",
         link: "/chart/tablechart",
       },
+      // Annotations
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Annotations",
+        link: "/chart/annotations",
+      }
     ],
+
   },
 ];
