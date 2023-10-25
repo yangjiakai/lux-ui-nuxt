@@ -134,15 +134,4 @@ const updateData = () => {};
       </VCard>
     </v-col>
   </v-row>
-  <v-row>
-    <v-col>
-      <v-card class="card-title mt-5">
-        <v-card-title>Action Panel </v-card-title>
-        <v-divider></v-divider>
-        <v-card-text>
-          <v-btn color="info" @click="updateData()">updateData</v-btn>
-        </v-card-text>
-      </v-card>
-    </v-col>
-  </v-row>
 </template>
