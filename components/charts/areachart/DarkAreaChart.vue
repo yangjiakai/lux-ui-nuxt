@@ -19,10 +19,10 @@ const labels = ref(["Jan", "Feb", "Mar", "Jun", "Jul", "Aug", "Sep"]);
 const chartOptions = computed(() => {
   return {
     chart: {
-      type: "area",
-      height: 300,
       fontFamily: `inherit`,
-      foreColor: "#adb0bb",
+      foreColor: "#7379A9",
+      background: "rgba(0,0,0,0)",
+      width: "100%",
       zoom: {
         enabled: true,
       },
@@ -31,6 +31,17 @@ const chartOptions = computed(() => {
       },
     },
     colors: ["#4782FB", "#47C4F4"],
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        gradientToColors: ["#0b70fb"],
+        type: "horizontal",
+        opacityFrom: 0.5,
+        opacityTo: 0.1,
+        stops: [0, 100, 100, 100],
+      },
+    },
     dataLabels: {
       enabled: false,
     },
@@ -49,23 +60,31 @@ const chartOptions = computed(() => {
         "2018-09-19T05:30:00",
         "2018-09-19T06:30:00",
       ],
+      axisBorder: {
+        show: false, // 隐藏 x 轴线
+      },
     },
     yaxis: {
       opposite: false,
       labels: {
         show: true,
+        fontWeight: "bold",
       },
     },
     legend: {
       show: true,
-      position: "bottom",
+      position: "top",
       width: "50px",
+      offsetY: 20,
     },
     grid: {
       show: false,
     },
     tooltip: {
       theme: "dark",
+    },
+    theme: {
+      mode: "dark",
     },
   };
 });
@@ -75,6 +94,7 @@ const chartOptions = computed(() => {
   <apexchart
     type="area"
     height="400px"
+    width="100%"
     :options="chartOptions"
     :series="series"
   >

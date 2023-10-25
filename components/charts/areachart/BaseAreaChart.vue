@@ -296,8 +296,9 @@ const chartOptions = computed(() => {
     chart: {
       id: "area-datetime",
       type: "line",
-      height: 100,
+      width: "90%",
       foreColor: "#adb0bb",
+      fontWeight: "bold",
       zoom: {
         autoScaleYaxis: true,
       },
@@ -345,6 +346,7 @@ const chartOptions = computed(() => {
       min: new Date("01 Mar 2012").getTime(),
       tickAmount: 6,
     },
+
     tooltip: {
       x: {
         format: "dd MMM yyyy",
@@ -355,13 +357,10 @@ const chartOptions = computed(() => {
     fill: {
       type: "gradient",
       gradient: {
-        shade: "dark",
-        gradientToColors: ["#0b70fb"],
         shadeIntensity: 1,
-        type: "horizontal",
-        opacityFrom: 1,
+        opacityFrom: 0.7,
         opacityTo: 0.9,
-        stops: [0, 100, 100, 100],
+        stops: [0, 100],
       },
     },
   };
@@ -435,7 +434,7 @@ const updateData = (timeline: string) => {
     </div>
     <apexchart
       ref="chart"
-      type="line"
+      type="area"
       height="400px"
       :options="chartOptions"
       :series="series"
