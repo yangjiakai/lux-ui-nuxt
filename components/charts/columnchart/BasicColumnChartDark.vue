@@ -50,10 +50,9 @@ const chartOptions = computed(() => {
     fill: {
       type: "gradient",
       gradient: {
-        gradientToColors: ["#0b70fb"],
+        gradientToColors: ["#2295FA", "#FF8484", "#FAD35D"],
         type: "vertical",
-        opacityFrom: 1,
-        opacityTo: 0.8,
+
         stops: [0, 100],
       },
     },

@@ -6,7 +6,7 @@ export const useChartThemeStore = defineStore({
     backgroundColor: "rgba(0,0,0,0)",
     foreColor: "#7379A9",
     // colors: ["#4782FB", "#47C4F4", "#AD64E9"],
-    colors: ["#479BC9", "#5765E1", "#834A9F"],
+    colors: ["#2596F9", "#FF2B57", "#F76B1C"],
   }),
   persist: [
     {
