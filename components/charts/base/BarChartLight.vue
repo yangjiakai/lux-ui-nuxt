@@ -33,7 +33,7 @@ const chartOptions = computed(() => {
         blur: 5,
       },
     },
-    colors: ["#F76C16"],
+    colors: ["#FFC900"],
     fill: {
       type: "gradient",
       gradient: {
@@ -84,7 +84,7 @@ const chartOptions = computed(() => {
       show: false,
     },
     tooltip: {
-      theme: "dark",
+      theme: "light",
     },
     theme: {
       mode: "light",
@@ -95,7 +95,7 @@ const chartOptions = computed(() => {
         fontSize: "20px",
         fontWeight: "bold",
 
-        color: "#999EA9",
+        color: "#434B52",
       },
     },
   };

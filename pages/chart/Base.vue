@@ -1,9 +1,15 @@
 <script setup lang="ts">
 import BarChart from "~/components/charts/base/BarChart.vue";
+import LineChart from "~/components/charts/base/LineChart.vue";
 import RadialBarChart1 from "~/components/charts/base/RadialBarChart1.vue";
 import RadialBarChart2 from "~/components/charts/base/RadialBarChart2.vue";
 import RadialBarChart3 from "~/components/charts/base/RadialBarChart3.vue";
-import LineChart from "~/components/charts/base/LineChart.vue";
+import BarChartLight from "~/components/charts/base/BarChartLight.vue";
+import LineChartLight from "~/components/charts/base/LineChartLight.vue";
+import RadialBarChart1Light from "~/components/charts/base/RadialBarChart1Light.vue";
+import RadialBarChart2Light from "~/components/charts/base/RadialBarChart2Light.vue";
+import RadialBarChart3Light from "~/components/charts/base/RadialBarChart3Light.vue";
+import UiCard from "~/components/common/UiCard.vue";
 import { Icon } from "@iconify/vue";
 </script>
 
@@ -79,6 +85,37 @@ import { Icon } from "@iconify/vue";
             <RadialBarChart3 />
           </v-card-text>
         </v-card>
+      </v-col>
+    </v-row>
+  </v-card>
+  <v-card class="pa-5 mt-10">
+    <v-row>
+      <v-col cols="12" lg="8">
+        <UiCard title="Revenue">
+          <LineChartLight />
+        </UiCard>
+      </v-col>
+
+      <v-col cols="12" lg="4">
+        <UiCard title="Sales">
+          <BarChartLight />
+        </UiCard>
+      </v-col>
+      <v-col cols="12" lg="4">
+        <UiCard title="Successful transaction">
+          <RadialBarChart1Light />
+        </UiCard>
+      </v-col>
+
+      <v-col cols="12" lg="4">
+        <UiCard title="Returning customer rate">
+          <RadialBarChart2Light />
+        </UiCard>
+      </v-col>
+      <v-col cols="12" lg="4">
+        <UiCard title="Sales Target Completed">
+          <RadialBarChart3Light />
+        </UiCard>
       </v-col>
     </v-row>
   </v-card>
