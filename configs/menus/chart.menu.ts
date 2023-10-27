@@ -12,6 +12,17 @@ export default [
       },
       {
         icon: "solar:chart-2-bold-duotone",
+        text: "ChartBoardLight",
+        link: "/chart/chartboardlight",
+      },
+      {
+        icon: "solar:chart-2-bold-duotone",
+        text: "ChartBoardDark",
+        link: "/chart/chartboarddark",
+      },
+
+      {
+        icon: "solar:chart-2-bold-duotone",
         text: "TableChart",
         link: "/chart/tablechart",
       },
