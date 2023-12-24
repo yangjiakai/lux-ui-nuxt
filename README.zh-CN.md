@@ -113,7 +113,7 @@ git clone https://github.com/yangjiakai/lux-nuxt3.git
 
 cd lux-nuxt3
 
-npm install
+yarn install
 
-npm run dev
+yarn dev
 ```
