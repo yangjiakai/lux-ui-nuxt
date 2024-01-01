@@ -5,6 +5,11 @@ export default [
     regex: /^\/widget/,
     items: [
       {
+        icon: "solar:calendar-line-duotone",
+        text: "Date",
+        link: "/widget/date",
+      },
+      {
         icon: "solar:clapperboard-edit-line-duotone",
         text: "MD Editor",
         link: "/widget/md-editor",

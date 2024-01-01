@@ -4,9 +4,9 @@
 * @Description: 
 -->
 <script setup lang="ts">
-import LanguageSwitcher from './LanguageSwitcher.vue';
-import UserMenu from './UserMenu.vue';
-import { useAppStore } from '@/stores/app';
+import LanguageSwitcher from "./LanguageSwitcher.vue";
+import UserMenu from "./UserMenu.vue";
+import { useAppStore } from "@/stores/app";
 const appStore = useAppStore();
 </script>
 
@@ -30,7 +30,6 @@ const appStore = useAppStore();
     <LanguageSwitcher />
 
     <UserMenu />
-
   </v-app-bar>
 </template>
 
