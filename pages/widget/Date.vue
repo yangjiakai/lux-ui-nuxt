@@ -22,7 +22,7 @@ const myDate = date.format(new Date(), "keyboardDate");
 </script>
 
 <template>
-  <div class="">{{ myDate }}</div>
+  <div class=""></div>
 </template>
 
 <style scoped lang="scss"></style>
