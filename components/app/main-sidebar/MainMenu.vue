@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
+import { Icon } from "@iconify/vue";
 
 const props = defineProps({
   menu: {
@@ -9,19 +9,27 @@ const props = defineProps({
 });
 </script>
 <template>
-  <v-list class="text-grey-darken-1 " nav dense>
+  <v-list class="text-grey-darken-1" nav dense>
     <template v-for="menuArea in props.menu" :key="menuArea.key">
-      <div v-if="(menuArea.key || menuArea.text)" class="pa-1 mt-2 text-overline">
+      <div v-if="menuArea.key || menuArea.text" class="pa-1 mt-2 text-overline">
         {{ menuArea.text }}
       </div>
       <template v-if="menuArea.items">
         <template v-for="menuItem in menuArea.items" :key="menuItem.key">
           <!-- menu level 1 -->
-          <v-list-item v-if="!menuItem.items" :to="menuItem.link" density="compact" color="primary">
+          <v-list-item
+            v-if="!menuItem.items"
+            :to="menuItem.link"
+            density="compact"
+            color="primary"
+          >
             <template v-slot:prepend>
               <Icon class="mx-2 mr-5" width="20" :icon="menuItem.icon" />
             </template>
-            <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
+            <v-list-item-title
+              v-text="menuItem.text"
+              class="font-weight-bold"
+            ></v-list-item-title>
           </v-list-item>
           <v-list-group v-else :value="menuItem.items">
             <!-- subMenu activator -->
@@ -30,16 +38,27 @@ const props = defineProps({
                 <template v-slot:prepend>
                   <Icon class="mx-2 mr-5" width="20" :icon="menuItem.icon" />
                 </template>
-                <v-list-item-title v-text="menuItem.text" class="font-weight-bold"></v-list-item-title>
+                <v-list-item-title
+                  v-text="menuItem.text"
+                  class="font-weight-bold"
+                ></v-list-item-title>
               </v-list-item>
             </template>
             <!-- menu level 2 -->
-            <v-list-item v-for="subMenuItem in menuItem.items" :key="subMenuItem.key" :to="subMenuItem.link"
-              density="compact" color="primary">
+            <v-list-item
+              v-for="subMenuItem in menuItem.items"
+              :key="subMenuItem.key"
+              :to="subMenuItem.link"
+              density="compact"
+              color="primary"
+            >
               <template v-slot:prepend>
                 <Icon class="mx-2 mr-5" width="20" :icon="subMenuItem.icon" />
               </template>
-              <v-list-item-title v-text="subMenuItem.text" class="font-weight-bold"></v-list-item-title>
+              <v-list-item-title
+                v-text="subMenuItem.text"
+                class="font-weight-bold"
+              ></v-list-item-title>
             </v-list-item>
           </v-list-group>
         </template>

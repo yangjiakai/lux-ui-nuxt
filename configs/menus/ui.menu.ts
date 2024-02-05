@@ -69,6 +69,11 @@ export default [
         icon: "solar:pin-list-line-duotone",
         text: "TimeLine",
         link: "/ui/timeline",
+      },
+      {
+        icon: "solar:bookmark-broken",
+        text: "Tree",
+        link: "/ui/tree",
       }
     ],
 
