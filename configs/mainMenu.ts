@@ -6,6 +6,7 @@ import menuWidget from "./menus/widget.menu";
 import menuForm from "./menus/form.menu";
 import menuChart from "./menus/chart.menu";
 import menuTable from "./menus/table.menu";
+
 export default {
   menu: [
     {

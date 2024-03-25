@@ -10,7 +10,18 @@ export default [
         text: "Toolbar",
         link: "/landings/toolbar",
       },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Tryolabs",
+        link: "/landings/tryolabs",
+      },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Whimsical",
+        link: "/landings/whimsical",
+      },
     ],
+
   },
 
 ];

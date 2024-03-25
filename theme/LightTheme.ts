@@ -7,7 +7,7 @@ const BLUE_THEME: ThemeTypes = {
         'border-color': '#e5eaef'
     },
     colors: {
-        primary: '#186dde',
+        primary: '#6558F5',
         secondary: '#0acc95',
         info: '#7460ee',
         success: '#13DEB9',
@@ -43,7 +43,7 @@ const GRAY_THEME = {
         'border-color': '#e5eaef',
     },
     colors: {
-        primary: "#344767",
+        primary: "#6558F5",
         secondary: "#0162FD",
         accent: "#705CF6",
         success: "#06d6a0",
