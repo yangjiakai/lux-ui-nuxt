@@ -74,6 +74,11 @@ export default [
         icon: "solar:bookmark-broken",
         text: "Tree",
         link: "/ui/tree",
+      },
+      {
+        icon: "solar:bookmark-broken",
+        text: "Sidebar",
+        link: "/ui/sidebar",
       }
     ],
 

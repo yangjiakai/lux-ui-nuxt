@@ -25,6 +25,11 @@ export default [
         text: "Dribbble",
         link: "/landings/dribbble",
       },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "QQ",
+        link: "/landings/qq",
+      },
     ],
 
   },
