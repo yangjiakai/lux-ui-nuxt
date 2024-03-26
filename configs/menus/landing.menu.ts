@@ -20,6 +20,11 @@ export default [
         text: "Whimsical",
         link: "/landings/whimsical",
       },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Dribbble",
+        link: "/landings/dribbble",
+      },
     ],
 
   },
