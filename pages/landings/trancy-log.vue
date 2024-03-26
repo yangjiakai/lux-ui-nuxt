@@ -95,6 +95,20 @@ const logs = ref([
 <template>
   <div class="h-full log-main">
     <v-card
+      max-width="1080"
+      class="mx-auto pa-5"
+      variant="flat"
+      color="transparent"
+    >
+      <v-row>
+        <v-col cols="12" md="2"></v-col>
+        <v-col cols="12" md="10">
+          <h1 class="text-h3 font-weight-bold mt-10 mb-5">Changelog</h1>
+          <p class="text-grey">New updates and improvements to Trancy</p>
+        </v-col>
+      </v-row>
+    </v-card>
+    <v-card
       v-for="log in logs"
       :key="log.version"
       max-width="1080"
@@ -102,13 +116,6 @@ const logs = ref([
       variant="flat"
       color="transparent"
     >
-      <v-row class="mb-10">
-        <v-col cols="12" md="2"></v-col>
-        <v-col cols="12" md="10">
-          <h1 class="text-h3 font-weight-bold mt-10 mb-5">Changelog</h1>
-          <p class="text-grey">New updates and improvements to Trancy</p>
-        </v-col>
-      </v-row>
       <v-row>
         <v-col cols="12" md="2">
           <div class="d-flex align-center">
