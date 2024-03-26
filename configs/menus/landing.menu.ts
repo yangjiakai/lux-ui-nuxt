@@ -30,6 +30,12 @@ export default [
         text: "QQ",
         link: "/landings/qq",
       },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Trancy log",
+        link: "/landings/trancy-log",
+      },
+
     ],
 
   },
