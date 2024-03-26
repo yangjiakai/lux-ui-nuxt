@@ -62,7 +62,7 @@ const tags = [
 
 <style scoped lang="scss">
 .whimsical-bg {
-  height: 100vh;
+  height: calc(100vh - 64px);
   background-color: #ccc;
   padding: 20px;
   display: flex;
