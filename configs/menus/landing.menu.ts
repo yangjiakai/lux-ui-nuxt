@@ -35,6 +35,11 @@ export default [
         text: "Trancy log",
         link: "/landings/trancy-log",
       },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Daily UI",
+        link: "/landings/daily",
+      },
 
     ],
 

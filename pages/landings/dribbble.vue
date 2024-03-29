@@ -78,6 +78,7 @@
             <div class="d-flex align-center text-body-2 my-2">
               <v-avatar size="30">
                 <v-img
+                  lazy-src="https://cdn.dribbble.com/users/1047455/avatars/small/fd251b6a71360896bee0e87d11d7868f.png?1505553932"
                   src="https://cdn.dribbble.com/users/1047455/avatars/small/fd251b6a71360896bee0e87d11d7868f.png?1505553932"
                 ></v-img>
               </v-avatar>

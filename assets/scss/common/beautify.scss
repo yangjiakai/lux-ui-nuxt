@@ -66,3 +66,8 @@
   font-weight: bold !important;
   font-size: 18px !important;
 }
+
+.screen-wraper {
+
+  height: calc(100vh - 64px);
+}
