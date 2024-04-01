@@ -37,8 +37,13 @@ export default [
       },
       {
         icon: "solar:slider-minimalistic-horizontal-line-duotone",
-        text: "Daily UI",
+        text: "Daily",
         link: "/landings/daily",
+      },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Labs",
+        link: "/landings/labs",
       },
 
     ],
