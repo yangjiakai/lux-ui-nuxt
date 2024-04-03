@@ -9,7 +9,7 @@ import { createI18n, useI18n } from "vue-i18n";
 import messages from '@/locales/messages';
 import Vue3Toasity, { type ToastContainerOptions } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
-
+import VueApexCharts from "vue3-apexcharts";
 const i18n = createI18n({
   legacy: false,
   locale: 'en',
@@ -151,6 +151,7 @@ export default defineNuxtPlugin((app) => {
 
   app.vueApp.use(vuetify);
   app.vueApp.use(i18n);
+  app.vueApp.use(VueApexCharts);
   app.vueApp.use(
     Vue3Toasity,
     {

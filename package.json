@@ -31,14 +31,14 @@
     "@mdi/font": "^7.2.96",
     "@nuxt/test-utils": "^3.8.1",
     "@pinia/nuxt": "^0.5.1",
-    "apexcharts": "^3.44.2",
+    "apexcharts": "^3.48.0",
     "clipboard": "^2.0.11",
     "md-editor-v3": "^4.7.0",
     "moment": "^2.29.4",
     "pinia": "^2.1.7",
     "sass": "^1.69.5",
     "vue-i18n": "^9.5.0",
-    "vue3-apexcharts": "^1.4.4",
+    "vue3-apexcharts": "^1.5.2",
     "vue3-lottie": "^3.1.0",
     "vue3-toastify": "^0.2.1"
   }
