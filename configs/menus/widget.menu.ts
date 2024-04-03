@@ -44,6 +44,11 @@ export default [
         text: "Vue Flow",
         link: "/widget/vueflow",
       },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Toastify",
+        link: "/widget/toastify",
+      },
 
     ],
   },

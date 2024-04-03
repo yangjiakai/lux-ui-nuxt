@@ -109,3 +109,10 @@ html {
     }
   }
 }
+
+// 暗色调时覆盖 toastify 的样式
+.Toastify__toast-theme--dark {
+  background: #22272E !important;
+  // background: rgba(var(--v-theme-background)) !important;
+  color: var(--toastify-text-color-dark);
+}
