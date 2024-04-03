@@ -13,8 +13,8 @@ const show = ref(true);
 
 <template>
   <v-card>
-    <v-card-title>
-      <span class="card-title"> {{ props.title }}</span>
+    <v-card-title class="card-title d-flex">
+      <span> {{ props.title }}</span>
       <v-spacer></v-spacer>
       <v-btn v-if="show" icon variant="flat" @click="show = false">
         <v-icon>mdi-menu-up</v-icon>

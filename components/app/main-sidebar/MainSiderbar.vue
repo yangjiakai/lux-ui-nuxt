@@ -24,7 +24,7 @@ const navigation = ref(configs.mainMenu);
 
     <template v-slot:prepend>
       <v-card height="100" class="d-flex align-center justify-center">
-        <img width="200" src="@/assets/images/logo.svg" alt="" />
+        <img width="160" src="@/assets/images/logo.png" alt="" />
       </v-card>
     </template>
 

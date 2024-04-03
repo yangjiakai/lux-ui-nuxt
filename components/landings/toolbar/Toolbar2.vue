@@ -6,7 +6,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <v-toolbar color="primary">
+  <v-toolbar color="primary" rounded="lg">
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
     <v-toolbar-title></v-toolbar-title>
 

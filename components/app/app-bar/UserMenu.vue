@@ -4,8 +4,8 @@
 * @Description:
 -->
 <script setup lang="ts">
+import { Icon } from "@iconify/vue";
 const router = useRouter();
-
 
 const handleLogout = () => {
   router.push("auth/login");
@@ -22,7 +22,11 @@ const navs = [
 </script>
 
 <template>
-  <v-menu :close-on-content-click="false" location="bottom right" transition="slide-y-transition">
+  <v-menu
+    :close-on-content-click="false"
+    location="bottom right"
+    transition="slide-y-transition"
+  >
     <!-- ---------------------------------------------- -->
     <!-- Activator Btn -->
     <!-- ---------------------------------------------- -->
@@ -31,8 +35,9 @@ const navs = [
         <v-badge content="2" color="success" dot bordered>
           <v-avatar color="#eee" size="40">
             <v-img
-              src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo.png"
-              alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"></v-img>
+              src="https://sindresorhus.com/apps/ai-actions/icon.png"
+              alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"
+            ></v-img>
           </v-avatar>
         </v-badge>
       </v-btn>
@@ -44,16 +49,16 @@ const navs = [
         <!-- ---------------------------------------------- -->
         <v-list-item>
           <template v-slot:prepend>
-            <v-avatar color="#eee" size="40">
+            <v-avatar size="56">
               <v-img
-                src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo.png"
-                alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"></v-img>
+                src="https://sindresorhus.com/apps/ai-actions/icon.png"
+                alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo"
+              ></v-img>
             </v-avatar>
           </template>
 
           <v-list-item-title class="font-weight-bold text-primary">
             YANG J.K.
-
           </v-list-item-title>
           <v-list-item-subtitle>
             <!-- {{ $store.state.user.email  }} -->
@@ -66,18 +71,24 @@ const navs = [
       <!-- Menu Area -->
       <!-- ---------------------------------------------- -->
 
+      <v-divider />
+      <!-- ---------------------------------------------- -->
+      <!-- Logout Area -->
+      <!-- ---------------------------------------------- -->
       <v-list variant="flat" elevation="0" :lines="false" density="compact">
-        <v-list-item color="primary" v-for="(nav, i) in navs" :key="i" link density="compact">
+        <v-list-item color="primary" link @click="" density="compact">
           <template v-slot:prepend>
-            <v-avatar size="30">
-              <v-icon>{{ nav.icon }}</v-icon>
-            </v-avatar>
+            <Icon
+              class="ml-4 mr-6 text-primary"
+              width="22"
+              icon="solar:user-circle-line-duotone"
+            />
           </template>
 
           <div>
-            <v-list-item-subtitle class="font-weight-bold">{{
-              nav.title
-            }}</v-list-item-subtitle>
+            <v-list-item-subtitle class="font-weight-bold">
+              用户信息
+            </v-list-item-subtitle>
           </div>
         </v-list-item>
       </v-list>
@@ -86,29 +97,23 @@ const navs = [
       <!-- Logout Area -->
       <!-- ---------------------------------------------- -->
       <v-list variant="flat" elevation="0" :lines="false" density="compact">
-        <v-list-item color="primary" link density="compact">
+        <v-list-item
+          color="primary"
+          link
+          @click="handleLogout"
+          density="compact"
+        >
           <template v-slot:prepend>
-            <v-avatar size="30">
-              <v-icon>mdi-lifebuoy</v-icon>
-            </v-avatar>
+            <Icon
+              width="22"
+              icon="solar:logout-2-line-duotone"
+              class="ml-4 mr-6 text-primary"
+            />
           </template>
 
           <div>
             <v-list-item-subtitle class="font-weight-bold">
-              Help Center
-            </v-list-item-subtitle>
-          </div>
-        </v-list-item>
-        <v-list-item color="primary" link @click="handleLogout" density="compact">
-          <template v-slot:prepend>
-            <v-avatar size="30">
-              <v-icon>mdi-logout</v-icon>
-            </v-avatar>
-          </template>
-
-          <div>
-            <v-list-item-subtitle class="font-weight-bold">
-              Logout
+              退出登录
             </v-list-item-subtitle>
           </div>
         </v-list-item>

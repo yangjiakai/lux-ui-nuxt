@@ -72,7 +72,7 @@ const services = [
 </script>
 
 <template>
-  <div class="bg-white h-full">
+  <div class=" h-full">
     <!-- Toolbar -->
     <v-toolbar color="primary">
       <div class="ml-5 mr-5">

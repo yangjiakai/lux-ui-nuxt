@@ -6,7 +6,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <v-toolbar color="primary">
+  <v-toolbar color="primary" rounded="lg">
     <v-spacer></v-spacer>
 
     <v-btn class="text-none" stacked>
