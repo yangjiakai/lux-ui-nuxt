@@ -17,7 +17,9 @@ import AppBar from "@/components/app/app-bar/AppBar.vue";
     <AppBar />
     <v-main class="fill-height">
       <div class="fill-height">
-        <RouterView />
+        <transition name="fade">
+          <RouterView />
+        </transition>
       </div>
     </v-main>
   </v-app>

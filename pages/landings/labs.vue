@@ -396,7 +396,7 @@ const displayLessons = computed(() => {
             <v-card-text
               class="px-3 py-1 d-flex flex-column justify-space-between"
             >
-              <h2 class="text-h5 font-weight-bold">
+              <h2 class="text-h6 font-weight-bold">
                 <v-chip class="mr-2" color="primary" label>
                   Developed with <span class="font-weight-bold ml-2">AWS</span>
                 </v-chip>

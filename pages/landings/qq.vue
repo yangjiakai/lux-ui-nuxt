@@ -8,7 +8,7 @@
 <template>
   <div class="h-full">
     <!-- MainSidebar -->
-    <v-navigation-drawer theme="dark" permanent rail>
+    <v-navigation-drawer theme="dark" rail location="right">
       <template v-slot:prepend>
         <div class="text-center py-5">
           <v-avatar size="36" color="red">
@@ -47,7 +47,7 @@
     </v-navigation-drawer>
 
     <!-- SubSidebar -->
-    <v-navigation-drawer permanent width="320">
+    <v-navigation-drawer width="320" location="right">
       <template v-slot:prepend>
         <div class="d-flex align-center px-3 pt-5 pb-2">
           <v-text-field
