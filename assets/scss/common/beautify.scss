@@ -1,10 +1,10 @@
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
   background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar:horizontal {
-  height: 5px;
+  height: 7px;
   background-color: #f5f5f5;
 }
 
@@ -15,9 +15,7 @@
   background-color: #ccc;
 }
 
-.shadow-1 {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
-}
+
 
 .two-line {
   display: -webkit-box;
@@ -61,13 +59,21 @@
   width: 100vw !important;
 }
 
+.h-screen {
+  height: 100vh !important;
+}
+
 .card-title {
-  color: #152647 !important;
+  color: rgba(var(--v-theme-grey-800)) !important;
   font-weight: bold !important;
   font-size: 18px !important;
 }
 
-.screen-wraper {
+.cursor-pointer {
+  cursor: pointer;
+}
 
+.scroll-warpper {
   height: calc(100vh - 64px);
+  overflow-y: auto;
 }

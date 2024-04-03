@@ -39,6 +39,11 @@ export default [
         text: "Skeleton",
         link: "/widget/skeleton",
       },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Vue Flow",
+        link: "/widget/vueflow",
+      },
 
     ],
   },
