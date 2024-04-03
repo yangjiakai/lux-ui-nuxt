@@ -4,7 +4,11 @@ export default [
     text: "UI Components",
     regex: /^\/ui/,
     items: [
-
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Toolbar",
+        link: "/landings/toolbar",
+      },
       // Alert
       {
         icon: "solar:shield-warning-line-duotone",

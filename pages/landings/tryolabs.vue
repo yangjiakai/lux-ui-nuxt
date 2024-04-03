@@ -4,6 +4,7 @@
 * @Description: 
 -->
 <script setup lang="ts">
+import InfiniteScroll from '@/components/animation/InfiniteScroll.vue';
 const services = [
   {
     title: "Price Optimization",
@@ -109,7 +110,7 @@ const services = [
           class="d-flex flex-column align-center justify-space-around h-full"
         >
           <p>OUR CLIENTS</p>
-
+          <InfiniteScroll/>
           <!-- logo list box -->
           <div class="d-flex flex-row justify-center">
             <v-img
