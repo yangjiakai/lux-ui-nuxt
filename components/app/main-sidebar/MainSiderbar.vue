@@ -30,12 +30,14 @@ const navigation = ref(configs.mainMenu);
       </v-card>
     </template> -->
     <template v-slot:prepend>
-      <v-card height="100" class="logo-card">
-        <h1 class="logo-text h-full">
-          <Icon class="mr-2" width="40" icon="solar:plain-bold-duotone" />
-          <span>Lux-UI</span>
-        </h1>
-      </v-card>
+      <RouterLink to="/">
+        <v-card height="100" class="logo-card">
+          <h1 class="logo-text h-full">
+            <Icon class="mr-2" width="40" icon="solar:plain-bold-duotone" />
+            <span>Lux-UI</span>
+          </h1>
+        </v-card>
+      </RouterLink>
     </template>
 
     <!-- ---------------------------------------------- -->
