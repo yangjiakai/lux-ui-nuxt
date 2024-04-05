@@ -1,17 +1,17 @@
 ::-webkit-scrollbar {
   width: 7px;
-  background: rgb(var(--v-theme-surface));
+  background: rgba(var(--v-theme-primary), 0.24);
 }
 
 ::-webkit-scrollbar:horizontal {
   height: 7px;
-  background: rgb(var(--v-theme-surface));
+  background: rgba(var(--v-theme-primary, 0.24));
 }
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb-horizontal {
   border-radius: 0.5rem;
-  background: rgb(var(--v-theme-perfect-scrollbar-thumb));
+  background: rgba(var(--v-theme-primary));
 }
 
 ::-webkit-scrollbar-corner {
