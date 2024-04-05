@@ -7,7 +7,9 @@
 import GithubCard from "@/components/app/main-sidebar/GithubCard.vue";
 import MainMenu from "@/components/app/main-sidebar/MainMenu.vue";
 import configs from "@/configs";
+
 import { useAppStore } from "@/stores/app";
+import { Icon } from "@iconify/vue";
 const appStore = useAppStore();
 const navigation = ref(configs.mainMenu);
 </script>
@@ -22,9 +24,17 @@ const navigation = ref(configs.mainMenu);
     <!---Top Area -->
     <!-- ---------------------------------------------- -->
 
-    <template v-slot:prepend>
+    <!-- <template v-slot:prepend>
       <v-card height="100" class="d-flex align-center justify-center">
         <img width="160" src="@/assets/images/logo.png" alt="" />
+      </v-card>
+    </template> -->
+    <template v-slot:prepend>
+      <v-card height="100" class="logo-card">
+        <h1 class="logo-text h-full">
+          <Icon class="mr-2" width="40" icon="solar:plain-bold-duotone" />
+          <span>Lux-UI</span>
+        </h1>
       </v-card>
     </template>
 
@@ -42,4 +52,13 @@ const navigation = ref(configs.mainMenu);
   </v-navigation-drawer>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(var(--v-theme-primary));
+}
+</style>

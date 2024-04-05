@@ -11,8 +11,12 @@ const openGithubSite = () => {
 </script>
 
 <template>
-  <v-card height="225" class="pa-3" variant="text" style="box-shadow: rgba(0, 0, 0, 0.05) 0px -25px 15px -20px">
-    <v-card class="d-flex flex-column pa-2" color="primary" height="200">
+  <v-card height="225" class="pa-3" variant="text">
+    <v-card
+      class="d-flex flex-column pa-2 gradient-card"
+      color="primary"
+      height="200"
+    >
       <v-card-title>
         <v-btn class="mr-2" size="40" color="white" icon>
           <Icon width="30" icon="line-md:github-loop" />
@@ -25,7 +29,13 @@ const openGithubSite = () => {
         <div>github.com/yangjiakai</div>
       </v-card-text>
       <v-card-actions>
-        <v-btn @click="openGithubSite" color="white" block prepend-icon="mdi-thumb-up-outline" variant="elevated">
+        <v-btn
+          @click="openGithubSite"
+          color="white"
+          block
+          prepend-icon="mdi-thumb-up-outline"
+          variant="elevated"
+        >
           Star Me
         </v-btn>
       </v-card-actions>
@@ -33,4 +43,13 @@ const openGithubSite = () => {
   </v-card>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.gradient-card {
+  background: linear-gradient(
+    270deg,
+    rgba(var(--v-theme-primary), 0.7) 0,
+    rgb(var(--v-theme-primary)) 100%
+  );
+  box-shadow: 0 2px 6px rgba(var(--v-theme-primary), 0.3);
+}
+</style>
