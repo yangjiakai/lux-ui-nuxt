@@ -30,6 +30,11 @@ export default [
         link: "/widget/gradient",
       },
       {
+        icon: "solar:atom-line-duotone",
+        text: "Swiper",
+        link: "/widget/swiper",
+      },
+      {
         icon: "solar:code-line-duotone",
         text: "Faker Api",
         link: "/widget/faker-api",
@@ -49,8 +54,6 @@ export default [
         text: "Toastify",
         link: "/widget/toastify",
       },
-
     ],
   },
-
 ];
