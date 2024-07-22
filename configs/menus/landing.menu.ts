@@ -1,11 +1,9 @@
-
 export default [
   {
     icon: "solar:streets-bold-duotone",
     text: "Landing Pages",
     regex: /^\/landing/,
     items: [
-
       {
         icon: "solar:screencast-2-line-duotone",
         text: "Tryolabs",
@@ -41,9 +39,11 @@ export default [
         text: "Labs",
         link: "/landings/labs",
       },
-
+      {
+        icon: "solar:screencast-2-line-duotone",
+        text: "Fotor",
+        link: "/landings/fotor",
+      },
     ],
-
   },
-
 ];

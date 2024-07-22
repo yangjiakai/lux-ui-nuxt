@@ -313,7 +313,6 @@ const displayLessons = computed(() => {
           <!-- Search Input -->
           <v-text-field
             v-model="searchStr"
-            variant="flat"
             append-inner-icon="mdi-magnify"
             hide-details
             clearable

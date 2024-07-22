@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 
@@ -6,7 +5,7 @@ definePageMeta({
   layout: "auth",
 });
 
-const router = useRouter()
+const router = useRouter();
 const isLoading = ref(false);
 const isSignInDisabled = ref(false);
 
@@ -31,7 +30,6 @@ const handleLogin = async () => {
     isLoading.value = true;
     isSignInDisabled.value = true;
     loginWithEmailAndPassword(email.value, password.value);
-
   } else {
     console.log("no");
   }
@@ -63,8 +61,6 @@ const resetErrors = () => {
   error.value = false;
   errorMessages.value = "";
 };
-
-
 </script>
 <template>
   <v-card color="white" class="pa-3 ma-3" elevation="3">
@@ -75,29 +71,81 @@ const resetErrors = () => {
     <!-- sign in form -->
 
     <v-card-text>
-      <v-form ref="refLoginForm" class="text-left" v-model="isFormValid" lazy-validation>
-        <v-text-field ref="refEmail" v-model="email" required :error="error" label="Email" density="default"
-          variant="underlined" color="primary" bg-color="#fff" :rules="emailRules" name="email" outlined validateOn="blur"
-          placeholder="403474473@qq.com" @keyup.enter="handleLogin" @change="resetErrors"></v-text-field>
-        <v-text-field ref="refPassword" v-model="password" :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-          :type="showPassword ? 'text' : 'password'" :error="error" :error-messages="errorMessages" label="Password"
-          placeholder="sfm12345" density="default" variant="underlined" color="primary" bg-color="#fff"
-          :rules="passwordRules" name="password" outlined validateOn="blur" @change="resetErrors"
-          @keyup.enter="handleLogin" @click:append-inner="showPassword = !showPassword"></v-text-field>
-        <v-btn :loading="isLoading" :disabled="isSignInDisabled" block size="x-large" color="primary" @click="handleLogin"
-          class="mt-2">Login</v-btn>
+      <v-form
+        ref="refLoginForm"
+        class="text-left"
+        v-model="isFormValid"
+        lazy-validation
+      >
+        <v-text-field
+          ref="refEmail"
+          v-model="email"
+          required
+          :error="error"
+          label="Email"
+          density="default"
+          variant="underlined"
+          color="primary"
+          bg-color="#fff"
+          :rules="emailRules"
+          name="email"
+          outlined
+          validateOn="blur"
+          placeholder="403474473@qq.com"
+          @keyup.enter="handleLogin"
+          @change="resetErrors"
+        ></v-text-field>
+        <v-text-field
+          ref="refPassword"
+          v-model="password"
+          :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+          :type="showPassword ? 'text' : 'password'"
+          :error="error"
+          :error-messages="errorMessages"
+          label="Password"
+          placeholder="sfm12345"
+          density="default"
+          variant="underlined"
+          color="primary"
+          bg-color="#fff"
+          :rules="passwordRules"
+          name="password"
+          outlined
+          validateOn="blur"
+          @change="resetErrors"
+          @keyup.enter="handleLogin"
+          @click:append-inner="showPassword = !showPassword"
+        ></v-text-field>
+        <v-btn
+          :loading="isLoading"
+          :disabled="isSignInDisabled"
+          block
+          size="x-large"
+          color="primary"
+          @click="handleLogin"
+          class="mt-2"
+          >Login</v-btn
+        >
 
-        <div class="text-grey text-center text-caption font-weight-bold text-uppercase my-5">
+        <div
+          class="text-grey text-center text-caption font-weight-bold text-uppercase my-5"
+        >
           or
         </div>
 
         <!-- external providers list -->
-        <v-btn class="mb-2 text-capitalize" color="white" elevation="1" block size="x-large" @click="signInWithGoolgle"
-          :disabled="isSignInDisabled">
+        <v-btn
+          class="mb-2 text-capitalize"
+          color="white"
+          elevation="1"
+          block
+          size="x-large"
+          @click="signInWithGoolgle"
+          :disabled="isSignInDisabled"
+        >
           <Icon icon="logos:google-icon" class="mr-3 my-2" />
           Google
         </v-btn>
-
 
         <div v-if="errorProvider" class="error--text my-2">
           {{ errorProviderMessages }}
@@ -108,7 +156,8 @@ const resetErrors = () => {
             Forgot password
           </router-link>
         </div>
-      </v-form></v-card-text>
+      </v-form></v-card-text
+    >
   </v-card>
   <div class="text-center mt-6">
     Don't have an account yet?
@@ -118,10 +167,8 @@ const resetErrors = () => {
   </div>
 </template>
 
-
-
 <style scoped lang="scss">
 .main-bg {
-  background-image: linear-gradient(to right, #D5DBE7, #D5DBE7);
+  background-image: linear-gradient(to right, #d5dbe7, #d5dbe7);
 }
 </style>
