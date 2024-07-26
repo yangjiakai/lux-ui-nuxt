@@ -6,6 +6,7 @@
 <script setup lang="ts">
 import UiChildCard from "@/components/common/UiCard.vue";
 import Gap from "@/components/ui-components/flex/Gap.vue";
+import Column from "~/components/ui-components/flex/Column.vue";
 </script>
 
 <template>
@@ -15,6 +16,12 @@ import Gap from "@/components/ui-components/flex/Gap.vue";
       <v-col cols="12">
         <UiChildCard title="Gap">
           <Gap />
+        </UiChildCard>
+      </v-col>
+      <!-- Column -->
+      <v-col cols="12">
+        <UiChildCard title="Column">
+          <Column />
         </UiChildCard>
       </v-col>
     </v-row>
