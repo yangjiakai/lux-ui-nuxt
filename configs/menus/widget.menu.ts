@@ -54,6 +54,11 @@ export default [
         text: "Toastify",
         link: "/widget/toastify",
       },
+      {
+        icon: "solar:code-line-duotone",
+        text: "Tailwind",
+        link: "/widget/tailwind",
+      },
     ],
   },
 ];

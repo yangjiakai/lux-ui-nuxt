@@ -1,4 +1,9 @@
 // enforce font globally
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // @use "vuetify/variables";
 @import "./variables";
 @import 'vuetify/styles';
