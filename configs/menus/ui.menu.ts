@@ -6,6 +6,11 @@ export default [
     items: [
       {
         icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Flex",
+        link: "/ui/flex",
+      },
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
         text: "Toolbar",
         link: "/landings/toolbar",
       },
@@ -83,9 +88,7 @@ export default [
         icon: "solar:bookmark-broken",
         text: "Sidebar",
         link: "/ui/sidebar",
-      }
+      },
     ],
-
-  }
-
+  },
 ];
