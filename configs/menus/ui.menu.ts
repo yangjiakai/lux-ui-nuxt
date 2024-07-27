@@ -6,6 +6,12 @@ export default [
     items: [
       {
         icon: "solar:slider-minimalistic-horizontal-line-duotone",
+        text: "Animation",
+        link: "/ui/animation",
+      },
+
+      {
+        icon: "solar:slider-minimalistic-horizontal-line-duotone",
         text: "Flex",
         link: "/ui/flex",
       },
