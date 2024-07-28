@@ -47,56 +47,7 @@
     </v-navigation-drawer>
 
     <!-- SubSidebar -->
-    <v-navigation-drawer width="320" location="right">
-      <template v-slot:prepend>
-        <div class="d-flex align-center px-3 pt-5 pb-2">
-          <v-text-field
-            density="compact"
-            label="Search"
-            prepend-inner-icon="mdi-magnify"
-            variant="outlined"
-            color="primary"
-            hide-details
-          ></v-text-field>
-          <!-- Add Btn -->
-          <v-btn class="ml-2" color="primary" size="small" icon>
-            <v-icon>mdi-plus</v-icon>
-          </v-btn>
-        </div>
-      </template>
 
-      <v-list lines="one" active-class="bg-primary">
-        <v-list-item v-for="i in 20" :value="i" class="py-3">
-          <v-list-item-title class="text-body-2"
-            >UI Component</v-list-item-title
-          >
-          <v-list-item-subtitle>
-            Set the content filtering level to restrict appts that can be
-            downloaded
-          </v-list-item-subtitle>
-          <!-- Avatar -->
-          <template v-slot:prepend>
-            <v-avatar size="40">
-              <img
-                src="https://cdn.dribbble.com/users/12865939/avatars/small/3acee4ea36ccf06cfe835761c38ba00c.png?1661974671"
-                alt="alt"
-              />
-            </v-avatar>
-          </template>
-          <template v-slot:append="{ isActive }">
-            <div
-              class="text-center chat-append"
-              :chass="isActive ? 'text-white' : 'text-grey'"
-            >
-              <div>2024/03/13</div>
-              <div>
-                <v-icon>mdi-bell</v-icon>
-              </div>
-            </div>
-          </template>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <div class="h-full main-bg"></div>
   </div>
 </template>
